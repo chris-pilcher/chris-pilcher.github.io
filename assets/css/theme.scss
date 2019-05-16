@@ -1,5 +1,3 @@
----
----
 @mixin font-size($size) {
   font-size: $size;
   font-size: calculateRem($size);
