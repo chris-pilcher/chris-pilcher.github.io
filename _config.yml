@@ -11,20 +11,20 @@ url: https://chris-pilcher.github.io
 baseurl: ''
 
 author: Chris Pilcher
-copyright: 2019
+copyright: 2015-2018
 
 share:
   facebook: true
   twitter: true
-  gplus: false
+  gplus: true
   linkedin: true
   pinterest: true
   email: true
 
 social:
-  github: chris-pilcher
+  github: streetturtle
   stackoverflow: ''
-  linkedin: chris-pilcher-nz
+  linkedin:
   instagram: ''
   lastfm: ''
   rss: feed.xml
@@ -38,7 +38,7 @@ yandex_metrica:
 # Set this to your disqus shortname to enable comments. Note that the 'comments'
 # setting below must also be true. Individual posts can override 'comments' to
 # disable on a post-by-post basis
-disqus: ''
+disqus: streetturtle
 comments: false
 
 permalink: /:year/:month/:title/
