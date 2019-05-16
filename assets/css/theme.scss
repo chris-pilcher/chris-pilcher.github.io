@@ -1,4 +1,4 @@
---- --- @mixin font-size($size) {
+@mixin font-size($size) {
 	font-size: $size;
 	font-size: calculateRem($size);
 }
@@ -290,7 +290,7 @@ nav {
 	font-size: 18px;
 	font-family: "Ubuntu", sans-serif;
 	padding: 0 10px !important;
-	border-top: 3px #ffcc00 solid;
+	border-top: 3px $accent-color solid;
 	border-bottom: 1px #000000 solid;
 	.navbar-brand,
 	.nav-link {
