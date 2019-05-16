@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="UTF-8">
+  <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+
+  {% stylesheet main %}
+
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+
+  {% stylesheet slicknav.min %}
+  {% javascript jquery.slicknav.min %}
+
+
+  <script>
+  $(document).ready(function(){
+    $('#menubar ul').slicknav({'label': '', 'prependTo': '#header', 'parentTag': 'li'});
+  });
+  </script>
+
+</head>
+
+<body>
+
+
+
+
+  <div class="wrapper">
+
+    <header id="header">
+	<h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+      <h2>{{ site.description }}</h2>
+
+      <nav id="menubar">
+        <ul>
+          {% for link in site.navigation %}
+            <li>
+              <a class="fill" href="{{link.url}}">{{link.text}}</a>
+            </li>
+          {% endfor %}
+          <li>
+            {% if site.linkedin %}
+              <a class="icon" href="https://linkedin.com/in/{{site.linkedin}}" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+            {% endif %}
+            {% if site.github %}
+              <a class="icon" href="https://github.com/{{site.github}}" target="_blank"><i class="fa fa-github"></i></a>
+            {% endif %}
+            {% if site.twitter %}
+              <a class="icon" href="https://twitter.com/{{site.twitter}}" target="_blank"><i class="fa fa-twitter-square"></i></a>
+            {% endif %}
+            {% if site.stackoverflow %}
+              <a class="icon" href="https://stackoverflow.com/users/{{site.stackoverflow}}" target="_blank"><i class="fa fa-stack-overflow"></i></a>
+            {% endif %}
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="content">
+      {{ content }}
+    </section>
+
+    <footer id="footer">
+      <p class="copyright">
+        Copyright &copy; {{ site.time | date: '%Y' }} {{ site.name }}. Powered by <a href="http://jekyllrb.com">Jekyll</a>.
+        <a href="https://github.com/rcrmn/jekyll-dusk-blog">Theme</a> by <a href="http://rcrmn.github.io">rcrmn</a>,
+        based on <a href="https://github.com/mattgraham/Midnight">Midnight</a>.
+      </p>
+      <p class="footer-links">
+		  <a href="{{ site.baseurl }}/feed.xml">Blog RSS Feed</a>
+      </p>
+    </footer>
+  </div>
+  <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+@charset "utf-8"
+
+// Our variables
+$regular-font-family: "OpenSansRegular", "Helvetica Neue", Helvetica, Arial, sans-serif
+$light-font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif
+$bold-font-family: 'OpenSansBold', "Helvetica Neue", Helvetica, Arial, sans-serif
+$semibold-font-family: 'OpenSansSemibold', "Helvetica Neue", Helvetica, Arial, sans-serif
+
+$monospaced-font-family: 'Lucida Sans', Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, monospace
+
+$base-font-size: 16px
+$small-font-size: $base-font-size * 0.875
+$base-line-height: 1.5
+
+$spacing-unit: 30px
+
+$grey: #5E5D57
+//$grey-dark: darken($grey, 16%)
+//$grey-darker: darken($grey, 21%)
+//$grey-light: lighten($grey, 25%)
+//$grey-contrast: lighten($grey, 80%)
+$grey-dark: #272622
+$grey-darker: #1d1c1a
+$grey-light: #99978e
+$grey-contrast: #f9f2d5
+
+
+$text-color: #f0e7d5
+$background-color: $grey-dark
+$brand-color: #2a7ae2
+$titles-color: $grey-contrast
+
+// Width of the content area
+$content-width: 850px
+
+$on-palm: 600px
+$on-laptop: 650px
+
+// Separation between posts in listing
+$article-margins: 50px
+
+@import mixins
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+
+@import font-awesome-compass
+@import font-awesome
+
+@import base
+@import layout
+
+@import syntax-highlighting
