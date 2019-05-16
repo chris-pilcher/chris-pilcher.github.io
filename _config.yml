@@ -22,11 +22,11 @@ share:
   email: true
 
 social:
-  github: streetturtle
-  stackoverflow: ''
+  github: chris-pilcher
+  stackoverflow: 
   linkedin:
-  instagram: ''
-  lastfm: ''
+  instagram: 
+  lastfm: 
   rss: feed.xml
 
 # Google Analytics key, leave blank to ignore
