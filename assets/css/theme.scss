@@ -1,3 +1,5 @@
+---
+---
 @mixin font-size($size) {
   font-size: $size;
   font-size: calculateRem($size);
@@ -15,13 +17,12 @@
 //********************************************************
 
 // Several accent colors, choose one or create your own!
-//$accent-color: #3CA2A2;    // original =)
+$accent-color: #3CA2A2;    // original =)
 //$accent-color: #C38FD6;  // velvet
 //$accent-color: #8FD6B3;  // greenish
 //$accent-color: #35B4DE;  // bluish
 //$accent-color: #D2E354;  // yellowish
 //$accent-color: #52B54B;  // green
-$accent-color: #FFCC00;
 
 $font-color: #dddddd;
 $background-color: #292929;
@@ -255,7 +256,7 @@ nav {
   font-size: 18px;
   font-family: "Ubuntu", sans-serif;
   padding: 0 10px !important;
-  border-top: 3px $accent-color solid;
+  border-top: 3px #3CA2A2 solid;
   border-bottom: 1px #000000 solid;
   .navbar-brand, .nav-link {
    color: #777;
