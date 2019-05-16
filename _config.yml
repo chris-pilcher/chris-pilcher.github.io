@@ -11,7 +11,7 @@ url: https://chris-pilcher.github.io
 baseurl: ''
 
 author: Chris Pilcher
-copyright: 2018-2019
+copyright: 2019
 
 share:
   facebook: true
@@ -22,9 +22,9 @@ share:
   email: true
 
 social:
-  github: 'chris-pilcher'
+  github: chris-pilcher
   stackoverflow: ''
-  linkedin: 
+  linkedin: chris-pilcher-nz
   instagram: ''
   lastfm: ''
   rss: feed.xml
