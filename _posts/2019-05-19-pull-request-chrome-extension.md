@@ -11,7 +11,7 @@ tags:
 
 My workplace has a naming convention for the title of pull requests. It's "_source branch_ to _target branch_". E.g. _feature/turn-off-line-endings_ to _develop_
 
-## The Problem
+## The Problem 🤦‍♂️
 
 Manually setting these titles was a hassle.
 
@@ -26,6 +26,8 @@ I created a simple Chrome extension to generate the title automatically.
 <iframe width="640" height="385" src="https://www.youtube.com/embed/Mdlk2XhaXl8" frameborder="0" allowfullscreen></iframe><br>
 
 ## Code 👨‍💻
+
+It's simply a `manifest.json` and a `content.js` file.
 
 >manifest.json
 {:.filename}
@@ -92,7 +94,7 @@ setInterval(() => {
 
 ## Publishing 🚀
 
-Create a zip file containing the code  
+Create a zip file containing the code.
 
 ![img]({{ '/assets/images/pull-request-chrome-extension/create-zip-file.png' | relative_url }}){: .center-image }
 
@@ -106,4 +108,8 @@ Fill in the details
 
 Published to the store
 
-![img]({{ '/assets/images/pull-request-chrome-extension/store-search.png' | relative_url }}){: .center-image }
+![img]({{ '/assets/images/pull-request-chrome-extension/store-listing.png' | relative_url }}){: .center-image }
+
+## Links
+
+I found [Build & Publish a Custom Google Chrome Extension - YouTube](https://www.youtube.com/watch?v=wHZCYi1K664) tutorial helpful 👍
