@@ -29,7 +29,7 @@ I created a simple Chrome extension to generate the title automatically.
 
 # Code 👨‍💻
 
-It's simply a `manifest.json` and a `content.js` file.
+The extension is a `manifest.json`, `content.js` and 3 icon files.
 
 >manifest.json
 {:.filename}
