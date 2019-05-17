@@ -29,12 +29,6 @@ I created a simple Chrome extension to generate the title automatically.
 
 # Code 👨‍💻
 
->Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-{: .note}
-
->Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-{: .note .warning}
-
 The extension is a `manifest.json`, `content.js` and 3 icon files.
 
 >manifest.json
