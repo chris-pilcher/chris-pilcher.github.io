@@ -15,10 +15,10 @@ I use the _IntelliJ IDEA/ReSharper 2.x_ scheme. This scheme shares the majority 
 
 ## My Top 3 Shortcuts
 
-* `Ctrl`{: .key}+`Shift`{:.key}+`R`{:.key} (Refactor this)
+* `Ctrl`{: .key}+`Shift`{:.key}+`R`{:.key} Refactor this
   * It's awesome because it will show you the shortcuts available at your cursor position 🔥 ![img]({{ '/assets/images/resharper-refactor-this-class.png' | relative_url }}) ![img]({{ '/assets/images/resharper-refactor-this-constructor.png' | relative_url }})
-* `Alt`{: .key}+`Enter`{:.key} (Quick fixes / context actions)
-* `Ctrl`{: .key}+`N`{:.key} (Go to everything)
+* `Alt`{: .key}+`Enter`{:.key} Quick fixes / context actions
+* `Ctrl`{: .key}+`N`{:.key} Search / go to everything
   * You can use camel humps for searching. ![img]({{ '/assets/images/resharper-camel-humps-search.png' | relative_url }})
 
 ## My Most Used Shortcuts
