@@ -29,4 +29,5 @@ I use the _IntelliJ IDEA/ReSharper 2.x_ scheme. This scheme shares the majority 
 
 ## Camel Case 
 
+I _Use CamelHumps_ 🐫
 [![img]({{ '/assets/images/resharper-camel-humps-settings.png' | relative_url }}){: .center-image }]({{ '/assets/images/resharper-camel-humps-settings.png' | relative_url }})
