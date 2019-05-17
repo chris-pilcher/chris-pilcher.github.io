@@ -13,6 +13,10 @@ These are my most commonly used [ReSharper keyboard shortcuts](https://www.jetbr
 
 I use the _IntelliJ IDEA/ReSharper 2.x_ scheme. This scheme shares the majority of shortcuts with other JetBrains development enviornments. This means I can use the same shortcuts in WebStorm 👌  
 
+## My Most Used Shortcuts
+
+[![img]({{ '/assets/images/resharper-shortcuts.png' | relative_url }}){: .center-image }]({{ '/assets/images/resharper-shortcuts.png' | relative_url }})
+
 ## My Top 3 Shortcuts
 
 * `Ctrl`{: .key}+`Shift`{:.key}+`R`{:.key} *Refactor this*
@@ -22,10 +26,6 @@ I use the _IntelliJ IDEA/ReSharper 2.x_ scheme. This scheme shares the majority 
 * `Alt`{: .key}+`Enter`{:.key} *Quick fixes / context actions*
 * `Ctrl`{: .key}+`N`{:.key} *Search / go to everything*
   * You can use camel humps for searching ![img]({{ '/assets/images/resharper-camel-humps-search.png' | relative_url }})
-
-## My Most Used Shortcuts
-
-[![img]({{ '/assets/images/resharper-shortcuts.png' | relative_url }}){: .center-image }]({{ '/assets/images/resharper-shortcuts.png' | relative_url }})
 
 ## Camel Case
 
