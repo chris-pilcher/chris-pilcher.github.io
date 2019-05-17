@@ -107,7 +107,7 @@ Fill in the details
 
 Publish to the store
 
-![img]({{ '/assets/images/pull-request-chrome-extension/store-listing.png' | relative_url }}){: .center-image }
+[![img]({{ '/assets/images/pull-request-chrome-extension/store-listing.png' | relative_url }}){: .center-image }](https://chrome.google.com/webstore/detail/visual-studio-pr-title-ge/lbkfohchcccpbmgckjbcgcnlmohdieej)
 
 [Visual Studio PR Title Generator - Chrome Web Store](https://chrome.google.com/webstore/detail/visual-studio-pr-title-ge/lbkfohchcccpbmgckjbcgcnlmohdieej)
 
