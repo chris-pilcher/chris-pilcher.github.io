@@ -15,11 +15,11 @@ I use the _IntelliJ IDEA/ReSharper 2.x_ scheme. This scheme shares the majority 
 
 ## My Top 3 Shortcuts
 
-* Refactor This  `Ctrl`{: .key}+`Shift`{:.key}+`R`{:.key}
-  * It's awesome because it will show you the shortcuts available at your cursor position 🔥)
-* Quick fixes / context actions `Alt`{: .key}+`Enter`{:.key}
-* Go to everything `Ctrl`{: .key}+`N`{:.key}
-  * You can use camel humps for searching. E.g. `MCN` for `MyClassName`
+* `Ctrl`{: .key}+`Shift`{:.key}+`R`{:.key} (Refactor this)
+  * It's awesome because it will show you the shortcuts available at your cursor position 🔥
+* `Alt`{: .key}+`Enter`{:.key} (Quick fixes / context actions)
+* `Ctrl`{: .key}+`N`{:.key} (Go to everything)
+  * You can use camel humps for searching. ![img]({{ '/assets/images/resharper-camel-humps-search.png' | relative_url }})
 
 ## My Most Used Shortcuts
 
@@ -27,4 +27,4 @@ I use the _IntelliJ IDEA/ReSharper 2.x_ scheme. This scheme shares the majority 
 
 ## Camel Case 
 
-[![img]({{ '/assets/images/resharper-camel-humps.png' | relative_url }}){: .center-image }]({{ '/assets/images/resharper-camel-humps.png' | relative_url }})
+[![img]({{ '/assets/images/resharper-camel-humps-settings.png' | relative_url }}){: .center-image }]({{ '/assets/images/resharper-camel-humps-settings.png' | relative_url }})
