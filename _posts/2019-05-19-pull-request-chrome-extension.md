@@ -11,7 +11,7 @@ tags:
 
 My workplace has a naming convention for the title of pull requests. 
 
-Example: `feature/turn-off-line-endings to develop`
+Example title: `feature/turn-off-line-endings to develop`
 
 # The Problem 🤦‍♂️
 
