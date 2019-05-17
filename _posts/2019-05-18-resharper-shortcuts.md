@@ -11,7 +11,7 @@ tags:
 
 These are my most commonly used [ReSharper keyboard shortcuts](https://www.jetbrains.com/resharper/docs/ReSharper_DefaultKeymap_IDEAscheme.pdf)
 
-I use the _IntelliJ IDEA/ReSharper 2.x_ scheme. This scheme shares the majority of shortcuts with other JetBrains development enviornments. This means I can use the same shortcuts in WebStorm 👌
+I use the _IntelliJ IDEA/ReSharper 2.x_ scheme. This scheme shares the majority of shortcuts with other JetBrains development enviornments. This means I can use the same shortcuts in WebStorm 👌  
 
 ## My Top 3 Shortcuts
 
@@ -21,13 +21,14 @@ I use the _IntelliJ IDEA/ReSharper 2.x_ scheme. This scheme shares the majority 
     * Refactor this - constructor ![img]({{ '/assets/images/resharper-refactor-this-constructor.png' | relative_url }})
 * `Alt`{: .key}+`Enter`{:.key} *Quick fixes / context actions*
 * `Ctrl`{: .key}+`N`{:.key} *Search / go to everything*
-  * You can use camel humps for searching. ![img]({{ '/assets/images/resharper-camel-humps-search.png' | relative_url }})
+  * You can use camel humps for searching ![img]({{ '/assets/images/resharper-camel-humps-search.png' | relative_url }})
 
 ## My Most Used Shortcuts
 
 [![img]({{ '/assets/images/resharper-shortcuts.png' | relative_url }}){: .center-image }]({{ '/assets/images/resharper-shortcuts.png' | relative_url }})
 
-## Camel Case 
+## Camel Case
 
-I _Use CamelHumps_ 🐫
+I _Use CamelHumps_ 🐫  
+
 ![img]({{ '/assets/images/resharper-camel-humps-settings.png' | relative_url }}){: .center-image }
