@@ -39,7 +39,8 @@ $background-pattern: 'random-grey-variations.png';
 //********************************************************
 body {
   color: $font-color;
-  background: $background-color url(pics/background/#{$background-pattern});
+  // background: $background-color url(pics/background/#{$background-pattern});
+  background: $background-color;
 }
 .card {
   background-color: $post-panel-color;
