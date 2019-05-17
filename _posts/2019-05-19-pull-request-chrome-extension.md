@@ -105,10 +105,13 @@ Fill in the details
 
 ![img]({{ '/assets/images/pull-request-chrome-extension/dashboard-main.png' | relative_url }}){: .center-image }
 
-Published to the store
+Publish to the store
 
 ![img]({{ '/assets/images/pull-request-chrome-extension/store-listing.png' | relative_url }}){: .center-image }
 
+[Visual Studio PR Title Generator - Chrome Web Store](https://chrome.google.com/webstore/detail/visual-studio-pr-title-ge/lbkfohchcccpbmgckjbcgcnlmohdieej)
+
 # Links
 
-I found [Build & Publish a Custom Google Chrome Extension - YouTube](https://www.youtube.com/watch?v=wHZCYi1K664) tutorial helpful 👍
+* I found [Build & Publish a Custom Google Chrome Extension - YouTube](https://www.youtube.com/watch?v=wHZCYi1K664) tutorial helpful 👍
+* [Visual Studio PR Title Generator - Chrome Web Store](https://chrome.google.com/webstore/detail/visual-studio-pr-title-ge/lbkfohchcccpbmgckjbcgcnlmohdieej)
