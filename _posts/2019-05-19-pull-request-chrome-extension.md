@@ -72,17 +72,17 @@ setInterval(() => {
       generateButton.innerText = '🖖';
 
       generateButton.addEventListener('click', () => {
-      let titleInput = document.getElementsByClassName('ms-TextField-field')[0];
+        let titleInput = document.getElementsByClassName('ms-TextField-field')[0];
 
-      let fromBranchName = document.getElementsByClassName('vss-PickListDropdown--title-text')[1].innerText;
-      let toBranchName = document.getElementsByClassName('vss-PickListDropdown--title-text')[2].innerText;
+        let fromBranchName = document.getElementsByClassName('vss-PickListDropdown--title-text')[1].innerText;
+        let toBranchName = document.getElementsByClassName('vss-PickListDropdown--title-text')[2].innerText;
 
-      titleInput.value = fromBranchName + ' to ' + toBranchName;
+        titleInput.value = fromBranchName + ' to ' + toBranchName;
 
-      // https://stackoverflow.com/questions/54137836/change-value-of-input-made-with-react-from-chrome-extension/54138182
-      titleInput.setAttribute('value', fromBranchName + ' to ' + toBranchName);
-      titleInput.dispatchEvent(new Event('change', { bubbles: true }));
-      titleInput.dispatchEvent(new Event('blur', { bubbles: true }));
+        // https://stackoverflow.com/questions/54137836/change-value-of-input-made-with-react-from-chrome-extension/54138182
+        titleInput.setAttribute('value', fromBranchName + ' to ' + toBranchName);
+        titleInput.dispatchEvent(new Event('change', { bubbles: true }));
+        titleInput.dispatchEvent(new Event('blur', { bubbles: true }));
       });
       titleDiv.appendChild(generateButton);
     }
