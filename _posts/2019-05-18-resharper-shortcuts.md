@@ -17,6 +17,6 @@ I use the _IntelliJ IDEA/ReSharper 2.x_ scheme.
 
 ## Most Used Shortcuts
 
-![img]({{ '/assets/images/resharper-shortcuts.png' | relative_url }}){: .center-image }
+[![img]({{ '/assets/images/resharper-shortcuts.png' | relative_url }}){: .center-image }]({{ '/assets/images/resharper-shortcuts.png' | relative_url }})
 
 TODO: include camel case
