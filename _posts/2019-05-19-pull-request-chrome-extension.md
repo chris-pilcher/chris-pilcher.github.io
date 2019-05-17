@@ -2,16 +2,18 @@
 layout: post
 title: "My first Chrome extension"
 date: 2019-05-18 16:25:06
-description: My first Chrome Extension.
+description: Details about my first Chrome extension
 tags: 
  - tools
 ---
 
-## Introduction
+# Introduction
 
-My workplace has a naming convention for the title of pull requests. It's "_source branch_ to _target branch_". E.g. _feature/turn-off-line-endings_ to _develop_
+My workplace has a naming convention for the title of pull requests. 
 
-## The Problem 🤦‍♂️
+Example: `feature/turn-off-line-endings to develop`
+
+# The Problem 🤦‍♂️
 
 Manually setting these titles was a hassle.
 
@@ -25,7 +27,7 @@ I created a simple Chrome extension to generate the title automatically.
 
 <iframe width="640" height="385" src="https://www.youtube.com/embed/Mdlk2XhaXl8" frameborder="0" allowfullscreen></iframe><br>
 
-## Code 👨‍💻
+# Code 👨‍💻
 
 It's simply a `manifest.json` and a `content.js` file.
 
@@ -34,24 +36,22 @@ It's simply a `manifest.json` and a `content.js` file.
 {% highlight json linenos %}
 {% raw %}
 {
-	"manifest_version": 2,
+  "manifest_version": 2,
 
-	"name": "Visual Studio PR Title Generator",
-	"short_name": "VS Title Gen",
-	"version": "0.0.0.1",
-	"description": "Generate pull request titles in Visual Studio Online. Updates the PR title to \"[source branch name] to [destination branch name]\"",
-	"content_scripts": [
-		{
-			"js": [ "content.js" ],
-			"matches": [ "https://*.visualstudio.com/*/_git/*/pullrequestcreate*" ]
-		}
-	],
-
-	"icons": {
-		"16": "icon16.png",
-		"48": "icon48.png",
-		"128": "icon128.png"
-	}
+  "name": "Visual Studio PR Title Generator",
+  "short_name": "VS Title Gen",
+  "version": "0.0.0.1",
+  "description": "Generate pull request titles in Visual Studio Online. Updates the PR title to \"[source branch name] to [destination branch name]\"",
+  "content_scripts": [
+  {
+    "js": [ "content.js" ],
+    "matches": [ "https://*.visualstudio.com/*/_git/*/pullrequestcreate*" ]
+  }],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
 }
 {% endraw %}
 {% endhighlight json %}
@@ -61,38 +61,37 @@ It's simply a `manifest.json` and a `content.js` file.
 {% highlight javascript linenos %}
 {% raw %}
 setInterval(() => {
-	// If the "insert PR title" button doesn't exist then add it in
-	if (!document.getElementById('customPRTitleGeneratorButton')) {
-		let titleDiv = document.querySelector('.ms-TextField-fieldGroup');
+  // If the "insert PR title" button doesn't exist then add it in
+  if (!document.getElementById('customPRTitleGeneratorButton')) {
+    let titleDiv = document.querySelector('.ms-TextField-fieldGroup');
 
-		if (titleDiv) {
-			let generateButton = document.createElement('button');
-			generateButton.id = 'customPRTitleGeneratorButton';
-			generateButton.title = 'Generate PR title';
-			generateButton.innerText = '🖖';
+    if (titleDiv) {
+      let generateButton = document.createElement('button');
+      generateButton.id = 'customPRTitleGeneratorButton';
+      generateButton.title = 'Generate PR title';
+      generateButton.innerText = '🖖';
 
-			generateButton.addEventListener('click', () => {
-				let titleInput = document.getElementsByClassName('ms-TextField-field')[0];
+      generateButton.addEventListener('click', () => {
+      let titleInput = document.getElementsByClassName('ms-TextField-field')[0];
 
-				let fromBranchName = document.getElementsByClassName('vss-PickListDropdown--title-text')[1].innerText;
-				let toBranchName = document.getElementsByClassName('vss-PickListDropdown--title-text')[2].innerText;
+      let fromBranchName = document.getElementsByClassName('vss-PickListDropdown--title-text')[1].innerText;
+      let toBranchName = document.getElementsByClassName('vss-PickListDropdown--title-text')[2].innerText;
 
-				titleInput.value = fromBranchName + ' to ' + toBranchName;
+      titleInput.value = fromBranchName + ' to ' + toBranchName;
 
-				// https://stackoverflow.com/questions/54137836/change-value-of-input-made-with-react-from-chrome-extension/54138182
-				titleInput.setAttribute('value', fromBranchName + ' to ' + toBranchName);
-				titleInput.dispatchEvent(new Event('change', { bubbles: true }));
-				titleInput.dispatchEvent(new Event('blur', { bubbles: true }));
-			});
-
-			titleDiv.appendChild(generateButton);
-		}
-	}
+      // https://stackoverflow.com/questions/54137836/change-value-of-input-made-with-react-from-chrome-extension/54138182
+      titleInput.setAttribute('value', fromBranchName + ' to ' + toBranchName);
+      titleInput.dispatchEvent(new Event('change', { bubbles: true }));
+      titleInput.dispatchEvent(new Event('blur', { bubbles: true }));
+      });
+      titleDiv.appendChild(generateButton);
+    }
+  }
 }, 1000); // check every second
 {% endraw %}
 {% endhighlight javascript %}
 
-## Publishing 🚀
+# Publishing 🚀
 
 Create a zip file containing the code.
 
@@ -110,6 +109,6 @@ Published to the store
 
 ![img]({{ '/assets/images/pull-request-chrome-extension/store-listing.png' | relative_url }}){: .center-image }
 
-## Links
+# Links
 
 I found [Build & Publish a Custom Google Chrome Extension - YouTube](https://www.youtube.com/watch?v=wHZCYi1K664) tutorial helpful 👍
