@@ -1,10 +1,13 @@
 ---
 layout: post
+current: post
+cover:  assets/images/welcome.jpg
+navigation: True
 title: "My first Chrome extension"
-date: 2019-05-19 16:25:06
-description: Details about my first Chrome extension
-tags: 
- - tools
+date: 2019-05-19 10:00:00
+class: post-template
+subclass: 'post tag-getting-started'
+author: Chris Pilcher
 ---
 
 # Introduction
@@ -13,9 +16,9 @@ My workplace has a naming convention for the title of pull requests.
 
 Example title: `feature/turn-off-line-endings to develop`
 
-# The Problem 🤦‍♂️
+# The Problem
 
-Manually setting these titles was a hassle 🤬
+Manually setting these titles was a hassle 😫
 
 <iframe width="640" height="385" src="https://www.youtube.com/embed/VHuAQcZtMP8" frameborder="0" allowfullscreen></iframe><br>
 
