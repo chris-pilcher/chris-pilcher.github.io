@@ -10,7 +10,7 @@ baseurl: /
 
 # Website info
 title: Chris Pilcher
-description: Chris Pilcher's Blog
+description: Chris Pilcher
 cover: /assets/images/blog-cover.jpg
 logo: /assets/images/blog-icon.png
 logo_dark: /assets/images/favicon.png
@@ -35,7 +35,7 @@ disqus_shortname: # replace with your disqus username
 google_analytics: # replace with your GA tracking identifier
 
 # Permalinks
-permalink: /:year/:month/:title/
+permalink: /:year/:month/:title
 # permalink: /author/:author
 # permalink: /tag/:tag
 
