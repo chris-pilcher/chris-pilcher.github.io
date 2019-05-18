@@ -11,10 +11,10 @@ baseurl: /
 # Website info
 title: Chris Pilcher
 description: Chris Pilcher
-cover: /assets/images/blog-cover.jpg
-logo: /assets/images/blog-icon.png
-logo_dark: /assets/images/favicon.png
-favicon: /assets/images/favicon.png
+cover: assets/images/blog-cover.jpg
+logo: assets/images/blog-icon.png
+logo_dark: assets/images/favicon.png
+favicon: assets/images/favicon.png
 production_url: https://www.chrispilcher.com/
 source_url: https://github.com/chris-pilcher/chris-pilcher.github.io
 CNAME: www.chrispilcher.com
