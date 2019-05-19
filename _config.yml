@@ -6,7 +6,7 @@ language: 'en-uk'
 words_per_minute: 200
 
 # edit baseurl to simply '/' if using as your personal page (instead of a project page)
-baseurl: '/'
+baseurl: https://www.chrispilcher.com/
 
 # Website info
 title: Chris Pilcher
@@ -35,12 +35,7 @@ disqus_shortname: # replace with your disqus username
 google_analytics: # replace with your GA tracking identifier
 
 # Permalinks
-permalink: /:title
-# permalink: /author/:author
-# permalink: /tag/:tag
-
-# Authors' info in `_data/authors.yml`
-# Tags' info in `_data/tags_info.yml`
+permalink: /:year/:month/:title/
 
 # gems and other configs
 plugins_dir: [_plugins]
