@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="/author/chris/feed.xml" rel="self" type="application/atom+xml" />
   <link href="/" rel="alternate" type="text/html" />
-  <updated>2019-05-19T22:58:35+00:00</updated>
+  <updated>2019-05-19T22:59:55+00:00</updated>
   <id>/author/chris/feed.xml</id>
 
   
@@ -53,10 +53,6 @@
   &lt;li&gt;Install &lt;a href=&quot;https://www.fontsquirrel.com/fonts/fira-code&quot;&gt;Fira Code&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Modify &lt;code class=&quot;highlighter-rouge&quot;&gt;.hyper.js&lt;/code&gt; config &lt;code class=&quot;key highlighter-rouge&quot;&gt;Ctrl&lt;/code&gt;+&lt;code class=&quot;key highlighter-rouge&quot;&gt;,&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;blockquote class=&quot;filename&quot;&gt;
-  &lt;p&gt;.hyper.js&lt;/p&gt;
-&lt;/blockquote&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 2
