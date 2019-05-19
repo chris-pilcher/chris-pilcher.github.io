@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title> - Articles</title>
+    <description>My blog about software development.</description>
+    <link>
+    </link>
+    
+      
+      <item>
+        <title>ReSharper Keyboard Shortcuts</title>
+        
+          <description>&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+
+</description>
+        
+        <pubDate>Sat, 18 May 2019 10:00:00 +0000</pubDate>
+        <link>
+        /2019/05/resharper-shortcuts/</link>
+        <guid isPermaLink="true">/2019/05/resharper-shortcuts/</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>hyper.is Terminal</title>
+        
+          <description>&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+
+</description>
+        
+        <pubDate>Sat, 18 May 2019 10:00:00 +0000</pubDate>
+        <link>
+        /2019/05/hyper/</link>
+        <guid isPermaLink="true">/2019/05/hyper/</guid>
+      </item>
+      
+    
+  </channel>
+</rss>
