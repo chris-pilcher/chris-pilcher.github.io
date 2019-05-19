@@ -102,11 +102,11 @@ Create a zip file containing the code.
 
 Upload to the Chrome web store  
 
-![img]({{ '/assets/images/pull-request-extension/dashboard-upload.png' | relative_url }})
+![img]({{ '/assets/images/pull-request-chrome-extension/dashboard-upload.png' | relative_url }})
 
 Fill in the details 
 
-![img]({{ '/assets/images/pull-request-extension/dashboard-main.png' | relative_url }}
+![img]({{ '/assets/images/pull-request-chrome-extension/dashboard-main.png' | relative_url }})
 
 Publish to the store
 
