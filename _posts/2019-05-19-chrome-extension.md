@@ -20,15 +20,15 @@ Example title: `feature/turn-off-line-endings to develop`
 
 Manually setting these titles was a hassle 😫
 
-<iframe width="640" height="385" src="https://www.youtube.com/embed/VHuAQcZtMP8" frameborder="0" allowfullscreen></iframe><br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VHuAQcZtMP8?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe><br>
 
 # Solution 💡
 
 I created a simple Chrome extension to generate the title automatically.  
 
-![img]({{ '/assets/images/pr-chrome-extension/pr-title-chrome-extension-screenshot.png' | relative_url }}){: .center-image }
+![img]('/assets/images/pr-chrome-extension/pr-title-chrome-extension-screenshot.png')
 
-<iframe width="640" height="385" src="https://www.youtube.com/embed/Mdlk2XhaXl8" frameborder="0" allowfullscreen></iframe><br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Mdlk2XhaXl8?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe><br>
 
 # Code 👨‍💻
 
@@ -98,19 +98,19 @@ setInterval(() => {
 
 Create a zip file containing the code.
 
-![img]({{ '/assets/images/pr-chrome-extension/create-zip-file.png' | relative_url }}){: .center-image }
+![img]('/assets/images/pr-chrome-extension/create-zip-file.png')
 
 Upload to the Chrome web store  
 
-![img]({{ '/assets/images/pr-chrome-extension/dashboard-upload.png' | relative_url }}){: .center-image }
+![img]('/assets/images/pr-chrome-extension/dashboard-upload.png')
 
 Fill in the details 
 
-![img]({{ '/assets/images/pr-chrome-extension/dashboard-main.png' | relative_url }}){: .center-image }
+![img]('/assets/images/pr-chrome-extension/dashboard-main.png')
 
 Publish to the store
 
-[![img]({{ '/assets/images/pr-chrome-extension/store-listing.png' | relative_url }}){: .center-image }](https://chrome.google.com/webstore/detail/visual-studio-pr-title-ge/lbkfohchcccpbmgckjbcgcnlmohdieej)
+[![img]('/assets/images/pr-chrome-extension/store-listing.png')](https://chrome.google.com/webstore/detail/visual-studio-pr-title-ge/lbkfohchcccpbmgckjbcgcnlmohdieej)
 
 [Visual Studio PR Title Generator - Chrome Web Store](https://chrome.google.com/webstore/detail/visual-studio-pr-title-ge/lbkfohchcccpbmgckjbcgcnlmohdieej)
 

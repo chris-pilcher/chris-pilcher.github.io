@@ -10,7 +10,6 @@ subclass: 'post tag-getting-started'
 author: chris
 ---
 
-
 # Introduction
 
 These are my most commonly used [ReSharper keyboard shortcuts](https://www.jetbrains.com/resharper/docs/ReSharper_DefaultKeymap_IDEAscheme.pdf)
@@ -19,7 +18,7 @@ I use the _IntelliJ IDEA/ReSharper 2.x_ scheme. This scheme shares the majority 
 
 # My Most Used Shortcuts
 
-[![img]({{ '/assets/images/resharper-shortcuts/resharper-shortcuts.png' | relative_url }}){: .center-image }]({{ '/assets/images/resharper-shortcuts/resharper-shortcuts.png' | relative_url }})
+[![img]('/assets/images/resharper-shortcuts/resharper-shortcuts.png')]('/assets/images/resharper-shortcuts/resharper-shortcuts.png')
 
 # My Top 3 Shortcuts
 
@@ -35,4 +34,4 @@ I use the _IntelliJ IDEA/ReSharper 2.x_ scheme. This scheme shares the majority 
 
 I _Use CamelHumps_ 🐫  
 
-![img]({{ '/assets/images/resharper-shortcuts/resharper-camel-humps-settings.png' | relative_url }}){: .center-image }
+![img]('/assets/images/resharper-shortcuts/resharper-camel-humps-settings.png')
