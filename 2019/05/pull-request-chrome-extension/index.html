@@ -185,7 +185,7 @@ into the {body} of the default.hbs template -->
 
 <h1 id="code-">Code 👨‍💻</h1>
 
-<p>The extension is a <code class="highlighter-rouge">manifest.json</code>, <code class="highlighter-rouge">content.js</code>, libs and 3 icon files.</p>
+<p>The extension is a <code class="highlighter-rouge">manifest.json</code>, <code class="highlighter-rouge">content.js</code>, libs and 3 icon files. The code is available on <a href="https://github.com/chris-pilcher/pr-title-chrome-extension/">github.com/chris-pilcher/pr-title-chrome-extension</a></p>
 
 <p><code class="highlighter-rouge">manifest.json</code>:</p>
 
@@ -193,7 +193,7 @@ into the {body} of the default.hbs template -->
   </span><span class="s2">"manifest_version"</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="w">
   </span><span class="s2">"name"</span><span class="p">:</span><span class="s2">"Visual Studio PR Title Generator"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"short_name"</span><span class="p">:</span><span class="s2">"VS Title Gen"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"version"</span><span class="p">:</span><span class="s2">"0.0.0.2"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"version"</span><span class="p">:</span><span class="s2">"0.0.0.3"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"description"</span><span class="p">:</span><span class="s2">"Generate pull request titles in Visual Studio Online. Updates the PR title to </span><span class="se">\"</span><span class="s2">[source branch name] to [destination branch name]</span><span class="se">\"</span><span class="s2">"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"content_scripts"</span><span class="p">:[</span><span class="w">
     </span><span class="p">{</span><span class="w">
@@ -203,7 +203,7 @@ into the {body} of the default.hbs template -->
         </span><span class="s2">"content.js"</span><span class="w">
       </span><span class="p">],</span><span class="w">
       </span><span class="s2">"matches"</span><span class="p">:[</span><span class="w">
-        </span><span class="s2">"https://*.visualstudio.com/*/_git/*/pullrequestcreate*"</span><span class="w">
+        </span><span class="s2">"https://*.visualstudio.com/*"</span><span class="w">
       </span><span class="p">]</span><span class="w">
     </span><span class="p">}</span><span class="w">
   </span><span class="p">],</span><span class="w">
@@ -226,6 +226,11 @@ into the {body} of the default.hbs template -->
   <span class="p">},</span>
   <span class="kd">get</span> <span class="nx">targetBranchName</span><span class="p">()</span> <span class="p">{</span>
     <span class="k">return</span> <span class="nx">$</span><span class="p">.</span><span class="nx">url</span><span class="p">().</span><span class="nx">param</span><span class="p">(</span><span class="s2">"targetRef"</span><span class="p">);</span>
+  <span class="p">},</span>
+  <span class="kd">get</span> <span class="nx">isPullRequestCreatePath</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nx">$</span><span class="p">.</span><span class="nx">url</span><span class="p">()</span>
+      <span class="p">.</span><span class="nx">attr</span><span class="p">()</span>
+      <span class="p">.</span><span class="nx">path</span><span class="p">.</span><span class="nx">endsWith</span><span class="p">(</span><span class="s2">"pullrequestcreate"</span><span class="p">);</span>
   <span class="p">}</span>
 <span class="p">};</span>
 
@@ -241,9 +246,11 @@ into the {body} of the default.hbs template -->
 
 <span class="c1">// Called when changes are made to the DOM tree.</span>
 <span class="kd">function</span> <span class="nx">handleMutation</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">page</span><span class="p">.</span><span class="nx">isPullRequestCreatePath</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
+
   <span class="kd">const</span> <span class="nx">generateButtonNotVisible</span> <span class="o">=</span> <span class="o">!</span><span class="nx">$</span><span class="p">(</span><span class="s2">"#generatePRTitle"</span><span class="p">).</span><span class="nx">length</span><span class="p">;</span>
   <span class="k">if</span> <span class="p">(</span><span class="nx">generateButtonNotVisible</span><span class="p">)</span> <span class="p">{</span>
-    <span class="kd">const</span> <span class="nx">generateButton</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s2">"&lt;button&gt;ðŸ––&lt;/button&gt;"</span><span class="p">)</span>
+    <span class="kd">const</span> <span class="nx">generateButton</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s2">"&lt;button&gt;🖖&lt;/button&gt;"</span><span class="p">)</span>
       <span class="p">.</span><span class="nx">attr</span><span class="p">({</span> <span class="na">id</span><span class="p">:</span> <span class="s2">"generatePRTitle"</span><span class="p">,</span> <span class="na">title</span><span class="p">:</span> <span class="s2">"Generate PR title"</span> <span class="p">})</span>
       <span class="p">.</span><span class="nx">click</span><span class="p">(</span><span class="nx">updateTitle</span><span class="p">);</span>
 
@@ -279,6 +286,7 @@ into the {body} of the default.hbs template -->
 <ul>
   <li>I found <a href="https://www.youtube.com/watch?v=wHZCYi1K664">Build &amp; Publish a Custom Google Chrome Extension - YouTube</a> tutorial helpful 👍</li>
   <li><a href="https://chrome.google.com/webstore/detail/visual-studio-pr-title-ge/lbkfohchcccpbmgckjbcgcnlmohdieej">Visual Studio PR Title Generator - Chrome Web Store</a></li>
+  <li><a href="https://github.com/chris-pilcher/pr-title-chrome-extension/">github.com/chris-pilcher/pr-title-chrome-extension</a></li>
 </ul>
 
                 </div>
