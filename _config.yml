@@ -6,11 +6,11 @@ language: 'en-uk'
 words_per_minute: 200
 
 # edit baseurl to simply '/' if using as your personal page (instead of a project page)
-baseurl: /
+baseurl: '/'
 
 # Website info
 title: Chris Pilcher
-description: Software development blog.
+description: My blog about software development.
 cover: assets/images/blog-cover.jpg
 logo: assets/images/blog-icon.png
 logo_dark: assets/images/favicon.png
