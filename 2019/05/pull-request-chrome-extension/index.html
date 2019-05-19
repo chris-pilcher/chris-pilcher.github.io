@@ -43,7 +43,7 @@
     <meta property="og:site_name" content="Chris Pilcher" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="My First Chrome Extension" />
-    <meta property="og:description" content="Introduction My workplace has a naming convention for the title of pull requests. Example title: feature/turn-off-line-endings to develop The Problem Manually setting these titles was a hassle 😫 Solution 💡 I created a simple Chrome extension to generate the title automatically. Code 👨‍💻 The extension is a manifest.json, content.js and" />
+    <meta property="og:description" content="Introduction We have naming convention for the title of pull requests at work. Example title: feature/turn-off-line-endings to develop Using this convention keeps pull request titles consistent and let reviewers easily see the source and destination branch before opening the pull request. The Problem Manually setting these titles is a hassle" />
     <meta property="og:url" content="/2019/05/pull-request-chrome-extension/" />
     <meta property="og:image" content="/assets/images/pull-request-chrome-extension/cover.jpg" />
     <meta property="article:publisher" content="https://www.facebook.com/" />
@@ -52,7 +52,7 @@
     <meta property="article:modified_time" content="2019-05-18T10:00:00+00:00" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="My First Chrome Extension" />
-    <meta name="twitter:description" content="Introduction My workplace has a naming convention for the title of pull requests. Example title: feature/turn-off-line-endings to develop The Problem Manually setting these titles was a hassle 😫 Solution 💡 I created a simple Chrome extension to generate the title automatically. Code 👨‍💻 The extension is a manifest.json, content.js and" />
+    <meta name="twitter:description" content="Introduction We have naming convention for the title of pull requests at work. Example title: feature/turn-off-line-endings to develop Using this convention keeps pull request titles consistent and let reviewers easily see the source and destination branch before opening the pull request. The Problem Manually setting these titles is a hassle" />
     <meta name="twitter:url" content="/" />
     <meta name="twitter:image" content="/assets/images/pull-request-chrome-extension/cover.jpg" />
     <meta name="twitter:label1" content="Written by" />
@@ -82,7 +82,7 @@
         "@type": "WebPage",
         "@id": "/2019/05/pull-request-chrome-extension/"
     },
-    "description": "Introduction My workplace has a naming convention for the title of pull requests. Example title: feature/turn-off-line-endings to develop The Problem Manually setting these titles was a hassle 😫 Solution 💡 I created a simple Chrome extension to generate the title automatically. Code 👨‍💻 The extension is a manifest.json, content.js and"
+    "description": "Introduction We have naming convention for the title of pull requests at work. Example title: feature/turn-off-line-endings to develop Using this convention keeps pull request titles consistent and let reviewers easily see the source and destination branch before opening the pull request. The Problem Manually setting these titles is a hassle"
 }
     </script>
 
@@ -162,13 +162,15 @@ into the {body} of the default.hbs template -->
                 <div class="kg-card-markdown">
                     <h1 id="introduction">Introduction</h1>
 
-<p>My workplace has a naming convention for the title of pull requests.</p>
+<p>We have naming convention for the title of pull requests at work.</p>
 
 <p>Example title: <code class="highlighter-rouge">feature/turn-off-line-endings to develop</code></p>
 
+<p>Using this convention keeps pull request titles consistent and let reviewers easily see the source and destination branch before opening the pull request.</p>
+
 <h1 id="the-problem">The Problem</h1>
 
-<p>Manually setting these titles was a hassle 😫</p>
+<p>Manually setting these titles is a hassle 😫</p>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VHuAQcZtMP8?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe>
 
@@ -183,109 +185,74 @@ into the {body} of the default.hbs template -->
 
 <h1 id="code-">Code 👨‍💻</h1>
 
-<p>The extension is a <code class="highlighter-rouge">manifest.json</code>, <code class="highlighter-rouge">content.js</code> and 3 icon files.</p>
+<p>The extension is a <code class="highlighter-rouge">manifest.json</code>, <code class="highlighter-rouge">content.js</code>, libs and 3 icon files.</p>
 
-<blockquote class="filename">
-  <p>manifest.json</p>
-</blockquote>
+<p><code class="highlighter-rouge">manifest.json</code>:</p>
 
-<figure class="highlight"><pre><code class="language-json" data-lang="json"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-</pre></td><td class="code"><pre><span class="p">{</span><span class="w">
-  </span><span class="s2">"manifest_version"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-
-  </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Visual Studio PR Title Generator"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"short_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"VS Title Gen"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"version"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.0.0.1"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Generate pull request titles in Visual Studio Online. Updates the PR title to </span><span class="se">\"</span><span class="s2">[source branch name] to [destination branch name]</span><span class="se">\"</span><span class="s2">"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"content_scripts"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-  </span><span class="p">{</span><span class="w">
-    </span><span class="s2">"js"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="s2">"content.js"</span><span class="w"> </span><span class="p">],</span><span class="w">
-    </span><span class="s2">"matches"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="s2">"https://*.visualstudio.com/*/_git/*/pullrequestcreate*"</span><span class="w"> </span><span class="p">]</span><span class="w">
-  </span><span class="p">}],</span><span class="w">
-  </span><span class="s2">"icons"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="s2">"16"</span><span class="p">:</span><span class="w"> </span><span class="s2">"icon16.png"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"48"</span><span class="p">:</span><span class="w"> </span><span class="s2">"icon48.png"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"128"</span><span class="p">:</span><span class="w"> </span><span class="s2">"icon128.png"</span><span class="w">
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+  </span><span class="s2">"manifest_version"</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"name"</span><span class="p">:</span><span class="s2">"Visual Studio PR Title Generator"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"short_name"</span><span class="p">:</span><span class="s2">"VS Title Gen"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"version"</span><span class="p">:</span><span class="s2">"0.0.0.2"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"description"</span><span class="p">:</span><span class="s2">"Generate pull request titles in Visual Studio Online. Updates the PR title to </span><span class="se">\"</span><span class="s2">[source branch name] to [destination branch name]</span><span class="se">\"</span><span class="s2">"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"content_scripts"</span><span class="p">:[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"js"</span><span class="p">:[</span><span class="w">
+        </span><span class="s2">"libs/jquery-3.4.1.min.js"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"libs/purl.js"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"content.js"</span><span class="w">
+      </span><span class="p">],</span><span class="w">
+      </span><span class="s2">"matches"</span><span class="p">:[</span><span class="w">
+        </span><span class="s2">"https://*.visualstudio.com/*/_git/*/pullrequestcreate*"</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="s2">"icons"</span><span class="p">:{</span><span class="w">
+    </span><span class="s2">"16"</span><span class="p">:</span><span class="s2">"icon16.png"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"48"</span><span class="p">:</span><span class="s2">"icon48.png"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"128"</span><span class="p">:</span><span class="s2">"icon128.png"</span><span class="w">
   </span><span class="p">}</span><span class="w">
-</span><span class="p">}</span></pre></td></tr></tbody></table></code></pre></figure>
+</span><span class="p">}</span></code></pre></figure>
 
-<blockquote class="filename">
-  <p>content.js</p>
-</blockquote>
+<p><code class="highlighter-rouge">content.js</code>:</p>
 
-<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-</pre></td><td class="code"><pre><span class="nx">setInterval</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">{</span>
-  <span class="c1">// If the "insert PR title" button doesn't exist then add it in</span>
-  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'customPRTitleGeneratorButton'</span><span class="p">))</span> <span class="p">{</span>
-    <span class="kd">let</span> <span class="nx">titleDiv</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">'.ms-TextField-fieldGroup'</span><span class="p">);</span>
-
-    <span class="k">if</span> <span class="p">(</span><span class="nx">titleDiv</span><span class="p">)</span> <span class="p">{</span>
-      <span class="kd">let</span> <span class="nx">generateButton</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">'button'</span><span class="p">);</span>
-      <span class="nx">generateButton</span><span class="p">.</span><span class="nx">id</span> <span class="o">=</span> <span class="s1">'customPRTitleGeneratorButton'</span><span class="p">;</span>
-      <span class="nx">generateButton</span><span class="p">.</span><span class="nx">title</span> <span class="o">=</span> <span class="s1">'Generate PR title'</span><span class="p">;</span>
-      <span class="nx">generateButton</span><span class="p">.</span><span class="nx">innerText</span> <span class="o">=</span> <span class="s1">'🖖'</span><span class="p">;</span>
-
-      <span class="nx">generateButton</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">'click'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
-        <span class="kd">let</span> <span class="nx">titleInput</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByClassName</span><span class="p">(</span><span class="s1">'ms-TextField-field'</span><span class="p">)[</span><span class="mi">0</span><span class="p">];</span>
-
-        <span class="kd">let</span> <span class="nx">fromBranchName</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByClassName</span><span class="p">(</span><span class="s1">'vss-PickListDropdown--title-text'</span><span class="p">)[</span><span class="mi">1</span><span class="p">].</span><span class="nx">innerText</span><span class="p">;</span>
-        <span class="kd">let</span> <span class="nx">toBranchName</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByClassName</span><span class="p">(</span><span class="s1">'vss-PickListDropdown--title-text'</span><span class="p">)[</span><span class="mi">2</span><span class="p">].</span><span class="nx">innerText</span><span class="p">;</span>
-
-        <span class="nx">titleInput</span><span class="p">.</span><span class="nx">value</span> <span class="o">=</span> <span class="nx">fromBranchName</span> <span class="o">+</span> <span class="s1">' to '</span> <span class="o">+</span> <span class="nx">toBranchName</span><span class="p">;</span>
-
-        <span class="c1">// https://stackoverflow.com/questions/54137836/change-value-of-input-made-with-react-from-chrome-extension/54138182</span>
-        <span class="nx">titleInput</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s1">'value'</span><span class="p">,</span> <span class="nx">fromBranchName</span> <span class="o">+</span> <span class="s1">' to '</span> <span class="o">+</span> <span class="nx">toBranchName</span><span class="p">);</span>
-        <span class="nx">titleInput</span><span class="p">.</span><span class="nx">dispatchEvent</span><span class="p">(</span><span class="k">new</span> <span class="nx">Event</span><span class="p">(</span><span class="s1">'change'</span><span class="p">,</span> <span class="p">{</span> <span class="na">bubbles</span><span class="p">:</span> <span class="kc">true</span> <span class="p">}));</span>
-        <span class="nx">titleInput</span><span class="p">.</span><span class="nx">dispatchEvent</span><span class="p">(</span><span class="k">new</span> <span class="nx">Event</span><span class="p">(</span><span class="s1">'blur'</span><span class="p">,</span> <span class="p">{</span> <span class="na">bubbles</span><span class="p">:</span> <span class="kc">true</span> <span class="p">}));</span>
-      <span class="p">});</span>
-      <span class="nx">titleDiv</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">generateButton</span><span class="p">);</span>
-    <span class="p">}</span>
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// Represents information from the page https://*.visualstudio.com/*/_git/*/pullrequestcreate*</span>
+<span class="kd">const</span> <span class="nx">page</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="kd">get</span> <span class="nx">titleInput</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nx">$</span><span class="p">(</span><span class="s2">".vc-pullRequestCreate-title-container"</span><span class="p">).</span><span class="nx">find</span><span class="p">(</span><span class="s2">"input"</span><span class="p">);</span>
+  <span class="p">},</span>
+  <span class="kd">get</span> <span class="nx">sourceBranchName</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nx">$</span><span class="p">.</span><span class="nx">url</span><span class="p">().</span><span class="nx">param</span><span class="p">(</span><span class="s2">"sourceRef"</span><span class="p">);</span>
+  <span class="p">},</span>
+  <span class="kd">get</span> <span class="nx">targetBranchName</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nx">$</span><span class="p">.</span><span class="nx">url</span><span class="p">().</span><span class="nx">param</span><span class="p">(</span><span class="s2">"targetRef"</span><span class="p">);</span>
   <span class="p">}</span>
-<span class="p">},</span> <span class="mi">1000</span><span class="p">);</span> <span class="c1">// check every second</span></pre></td></tr></tbody></table></code></pre></figure>
+<span class="p">};</span>
+
+<span class="c1">// Updates the title of the pull request</span>
+<span class="kd">function</span> <span class="nx">updateTitle</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">page</span><span class="p">.</span><span class="nx">titleInput</span><span class="p">.</span><span class="nx">val</span><span class="p">(</span><span class="s2">`</span><span class="p">${</span><span class="nx">page</span><span class="p">.</span><span class="nx">sourceBranchName</span><span class="p">}</span><span class="s2"> to </span><span class="p">${</span><span class="nx">page</span><span class="p">.</span><span class="nx">targetBranchName</span><span class="p">}</span><span class="s2">`</span><span class="p">);</span>
+
+  <span class="c1">// The follow two lines are required to change the value of an input made with reactjs.</span>
+  <span class="c1">// See: https://stackoverflow.com/questions/54137836/change-value-of-input-made-with-react-from-chrome-extension/54138182</span>
+  <span class="nx">page</span><span class="p">.</span><span class="nx">titleInput</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">dispatchEvent</span><span class="p">(</span><span class="k">new</span> <span class="nx">Event</span><span class="p">(</span><span class="s2">"change"</span><span class="p">,</span> <span class="p">{</span> <span class="na">bubbles</span><span class="p">:</span> <span class="kc">true</span> <span class="p">}));</span>
+  <span class="nx">page</span><span class="p">.</span><span class="nx">titleInput</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">dispatchEvent</span><span class="p">(</span><span class="k">new</span> <span class="nx">Event</span><span class="p">(</span><span class="s2">"blur"</span><span class="p">,</span> <span class="p">{</span> <span class="na">bubbles</span><span class="p">:</span> <span class="kc">true</span> <span class="p">}));</span>
+<span class="p">}</span>
+
+<span class="c1">// Called when changes are made to the DOM tree.</span>
+<span class="kd">function</span> <span class="nx">handleMutation</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kd">const</span> <span class="nx">generateButtonNotVisible</span> <span class="o">=</span> <span class="o">!</span><span class="nx">$</span><span class="p">(</span><span class="s2">"#generatePRTitle"</span><span class="p">).</span><span class="nx">length</span><span class="p">;</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">generateButtonNotVisible</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">const</span> <span class="nx">generateButton</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s2">"&lt;button&gt;ðŸ––&lt;/button&gt;"</span><span class="p">)</span>
+      <span class="p">.</span><span class="nx">attr</span><span class="p">({</span> <span class="na">id</span><span class="p">:</span> <span class="s2">"generatePRTitle"</span><span class="p">,</span> <span class="na">title</span><span class="p">:</span> <span class="s2">"Generate PR title"</span> <span class="p">})</span>
+      <span class="p">.</span><span class="nx">click</span><span class="p">(</span><span class="nx">updateTitle</span><span class="p">);</span>
+
+    <span class="nx">page</span><span class="p">.</span><span class="nx">titleInput</span><span class="p">.</span><span class="nx">after</span><span class="p">(</span><span class="nx">generateButton</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">const</span> <span class="nx">observer</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">MutationObserver</span><span class="p">(</span><span class="nx">handleMutation</span><span class="p">);</span>
+<span class="nx">observer</span><span class="p">.</span><span class="nx">observe</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">,</span> <span class="p">{</span> <span class="na">childList</span><span class="p">:</span> <span class="kc">true</span> <span class="p">});</span></code></pre></figure>
 
 <h1 id="publishing-">Publishing 🚀</h1>
 
