@@ -34,7 +34,7 @@ I created a simple Chrome extension to generate the title automatically.
 
 # Code 👨‍💻
 
-The extension is a `manifest.json`, `content.js`, libs and 3 icon files.
+The extension is a `manifest.json`, `content.js`, libs and 3 icon files. The code is available on [github.com/chris-pilcher/pr-title-chrome-extension](https://github.com/chris-pilcher/pr-title-chrome-extension/)
 
 `manifest.json`:
 {% highlight json %}
@@ -42,7 +42,7 @@ The extension is a `manifest.json`, `content.js`, libs and 3 icon files.
   "manifest_version":2,
   "name":"Visual Studio PR Title Generator",
   "short_name":"VS Title Gen",
-  "version":"0.0.0.2",
+  "version":"0.0.0.3",
   "description":"Generate pull request titles in Visual Studio Online. Updates the PR title to \"[source branch name] to [destination branch name]\"",
   "content_scripts":[
     {
@@ -52,7 +52,7 @@ The extension is a `manifest.json`, `content.js`, libs and 3 icon files.
         "content.js"
       ],
       "matches":[
-        "https://*.visualstudio.com/*/_git/*/pullrequestcreate*"
+        "https://*.visualstudio.com/*"
       ]
     }
   ],
@@ -76,6 +76,11 @@ const page = {
   },
   get targetBranchName() {
     return $.url().param("targetRef");
+  },
+  get isPullRequestCreatePath() {
+    return $.url()
+      .attr()
+      .path.endsWith("pullrequestcreate");
   }
 };
 
@@ -91,9 +96,11 @@ function updateTitle() {
 
 // Called when changes are made to the DOM tree.
 function handleMutation() {
+  if (!page.isPullRequestCreatePath) return;
+
   const generateButtonNotVisible = !$("#generatePRTitle").length;
   if (generateButtonNotVisible) {
-    const generateButton = $("<button>ðŸ––</button>")
+    const generateButton = $("<button>🖖</button>")
       .attr({ id: "generatePRTitle", title: "Generate PR title" })
       .click(updateTitle);
 
@@ -129,3 +136,4 @@ Publish to the store
 
 * I found [Build & Publish a Custom Google Chrome Extension - YouTube](https://www.youtube.com/watch?v=wHZCYi1K664) tutorial helpful 👍
 * [Visual Studio PR Title Generator - Chrome Web Store](https://chrome.google.com/webstore/detail/visual-studio-pr-title-ge/lbkfohchcccpbmgckjbcgcnlmohdieej)
+* [github.com/chris-pilcher/pr-title-chrome-extension](https://github.com/chris-pilcher/pr-title-chrome-extension/)
