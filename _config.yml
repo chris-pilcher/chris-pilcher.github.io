@@ -15,7 +15,7 @@ cover: assets/images/blog-cover.jpg
 logo: assets/images/blog-icon.png
 logo_dark: assets/images/favicon.png
 favicon: assets/images/favicon.png
-production_url: https://www.chrispilcher.com
+production_url: https://www.chrispilcher.com/
 source_url: https://github.com/chris-pilcher/chris-pilcher.github.io
 CNAME: www.chrispilcher.com
 0
