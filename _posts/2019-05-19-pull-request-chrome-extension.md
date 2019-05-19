@@ -7,7 +7,7 @@ title: "My first Chrome extension"
 date: 2019-05-19 10:00:00
 class: post-template
 subclass: 'post tag-getting-started'
-author: Chris Pilcher
+author: chris
 ---
 
 # Introduction
