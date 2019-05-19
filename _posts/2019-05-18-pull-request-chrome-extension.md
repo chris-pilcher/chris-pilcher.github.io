@@ -12,13 +12,15 @@ author: chris
 
 # Introduction
 
-My workplace has a naming convention for the title of pull requests. 
+We have naming convention for the title of pull requests at work.
 
 Example title: `feature/turn-off-line-endings to develop`
 
+Using this convention keeps pull request titles consistent and let reviewers easily see the source and destination branch before opening the pull request.
+
 # The Problem
 
-Manually setting these titles was a hassle 😫
+Manually setting these titles is a hassle 😫
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VHuAQcZtMP8?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
@@ -32,67 +34,76 @@ I created a simple Chrome extension to generate the title automatically.
 
 # Code 👨‍💻
 
-The extension is a `manifest.json`, `content.js` and 3 icon files.
+The extension is a `manifest.json`, `content.js`, libs and 3 icon files.
 
->manifest.json
-{:.filename}
-{% highlight json linenos %}
-{% raw %}
+`manifest.json`:
+{% highlight json %}
 {
-  "manifest_version": 2,
-
-  "name": "Visual Studio PR Title Generator",
-  "short_name": "VS Title Gen",
-  "version": "0.0.0.1",
-  "description": "Generate pull request titles in Visual Studio Online. Updates the PR title to \"[source branch name] to [destination branch name]\"",
-  "content_scripts": [
-  {
-    "js": [ "content.js" ],
-    "matches": [ "https://*.visualstudio.com/*/_git/*/pullrequestcreate*" ]
-  }],
-  "icons": {
-    "16": "icon16.png",
-    "48": "icon48.png",
-    "128": "icon128.png"
+  "manifest_version":2,
+  "name":"Visual Studio PR Title Generator",
+  "short_name":"VS Title Gen",
+  "version":"0.0.0.2",
+  "description":"Generate pull request titles in Visual Studio Online. Updates the PR title to \"[source branch name] to [destination branch name]\"",
+  "content_scripts":[
+    {
+      "js":[
+        "libs/jquery-3.4.1.min.js",
+        "libs/purl.js",
+        "content.js"
+      ],
+      "matches":[
+        "https://*.visualstudio.com/*/_git/*/pullrequestcreate*"
+      ]
+    }
+  ],
+  "icons":{
+    "16":"icon16.png",
+    "48":"icon48.png",
+    "128":"icon128.png"
   }
 }
-{% endraw %}
-{% endhighlight json %}
+{% endhighlight %}
 
->content.js
-{:.filename}
-{% highlight javascript linenos %}
-{% raw %}
-setInterval(() => {
-  // If the "insert PR title" button doesn't exist then add it in
-  if (!document.getElementById('customPRTitleGeneratorButton')) {
-    let titleDiv = document.querySelector('.ms-TextField-fieldGroup');
-
-    if (titleDiv) {
-      let generateButton = document.createElement('button');
-      generateButton.id = 'customPRTitleGeneratorButton';
-      generateButton.title = 'Generate PR title';
-      generateButton.innerText = '🖖';
-
-      generateButton.addEventListener('click', () => {
-        let titleInput = document.getElementsByClassName('ms-TextField-field')[0];
-
-        let fromBranchName = document.getElementsByClassName('vss-PickListDropdown--title-text')[1].innerText;
-        let toBranchName = document.getElementsByClassName('vss-PickListDropdown--title-text')[2].innerText;
-
-        titleInput.value = fromBranchName + ' to ' + toBranchName;
-
-        // https://stackoverflow.com/questions/54137836/change-value-of-input-made-with-react-from-chrome-extension/54138182
-        titleInput.setAttribute('value', fromBranchName + ' to ' + toBranchName);
-        titleInput.dispatchEvent(new Event('change', { bubbles: true }));
-        titleInput.dispatchEvent(new Event('blur', { bubbles: true }));
-      });
-      titleDiv.appendChild(generateButton);
-    }
+`content.js`:
+{% highlight javascript %}
+// Represents information from the page https://*.visualstudio.com/*/_git/*/pullrequestcreate*
+const page = {
+  get titleInput() {
+    return $(".vc-pullRequestCreate-title-container").find("input");
+  },
+  get sourceBranchName() {
+    return $.url().param("sourceRef");
+  },
+  get targetBranchName() {
+    return $.url().param("targetRef");
   }
-}, 1000); // check every second
-{% endraw %}
-{% endhighlight javascript %}
+};
+
+// Updates the title of the pull request
+function updateTitle() {
+  page.titleInput.val(`${page.sourceBranchName} to ${page.targetBranchName}`);
+
+  // The follow two lines are required to change the value of an input made with reactjs.
+  // See: https://stackoverflow.com/questions/54137836/change-value-of-input-made-with-react-from-chrome-extension/54138182
+  page.titleInput[0].dispatchEvent(new Event("change", { bubbles: true }));
+  page.titleInput[0].dispatchEvent(new Event("blur", { bubbles: true }));
+}
+
+// Called when changes are made to the DOM tree.
+function handleMutation() {
+  const generateButtonNotVisible = !$("#generatePRTitle").length;
+  if (generateButtonNotVisible) {
+    const generateButton = $("<button>ðŸ––</button>")
+      .attr({ id: "generatePRTitle", title: "Generate PR title" })
+      .click(updateTitle);
+
+    page.titleInput.after(generateButton);
+  }
+}
+
+const observer = new MutationObserver(handleMutation);
+observer.observe(document.body, { childList: true });
+{% endhighlight %}
 
 # Publishing 🚀
 
