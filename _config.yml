@@ -67,7 +67,7 @@ lsi: False
 username: chris-pilcher
 repo: chris-pilcher.github.io
 branch: source
-relative_source: ../chris-pilcher/
+relative_source: ../chris-pilcher.io/
 destination: ../chris-pilcher-pages/
 production_url:  https://www.chrispilcher.com/
 source_url:  https://github.com/chris-pilcher/chris-pilcher.github.io

@@ -16,30 +16,7 @@ SOURCE_BRANCH = CONFIG["branch"]
 DESTINATION_BRANCH = "master"
 CNAME = CONFIG["CNAME"]
 
-def check_destination
-  unless Dir.exist? CONFIG["destination"]
-    sh "git clone https://$GIT_NAME:$GH_TOKEN@github.com/#{USERNAME}/#{REPO}.git #{CONFIG["destination"]}"
-  end
-end
-
 namespace :site do
-  desc "Generate the site"
-  task :build do
-    check_destination
-    sh "bundle exec jekyll build"
-  end
-
-  desc "Generate the site and serve locally"
-  task :serve do
-    check_destination
-    sh "bundle exec jekyll serve"
-  end
-
-  desc "Generate the site, serve locally and watch for changes"
-  task :watch do
-    sh "bundle exec jekyll serve --watch"
-  end
-
   desc "Generate the site and push changes to remote origin"
   task :deploy do
     # Detect pull request
@@ -56,12 +33,12 @@ namespace :site do
     end
 
     # Make sure destination folder exists as git repo
-    check_destination
+    unless Dir.exist? CONFIG["destination"]
+      sh "git clone https://$GIT_NAME:$GH_TOKEN@github.com/#{USERNAME}/#{REPO}.git #{CONFIG["destination"]}"
+    end
 
-    sh "git checkout #{SOURCE_BRANCH}"
+    sh "git checkout #{SOURCE_BRANCH}" # source
     Dir.chdir(CONFIG["destination"]) { sh "git checkout #{DESTINATION_BRANCH}" }
-
-    sh "ls"
 
     # Generate the site
     sh "bundle exec jekyll build"
