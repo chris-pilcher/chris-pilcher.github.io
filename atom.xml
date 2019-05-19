@@ -23,6 +23,21 @@
     
       
       <item>
+        <title>My First Chrome Extension</title>
+        
+          <description>&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+
+</description>
+        
+        <pubDate>Sat, 18 May 2019 10:00:00 +0000</pubDate>
+        <link>
+        /2019/05/pull-request-chrome-extension/</link>
+        <guid isPermaLink="true">/2019/05/pull-request-chrome-extension/</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>hyper.is Terminal</title>
         
           <description>&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
@@ -33,21 +48,6 @@
         <link>
         /2019/05/hyper/</link>
         <guid isPermaLink="true">/2019/05/hyper/</guid>
-      </item>
-      
-    
-      
-      <item>
-        <title>My First Chrome Extension</title>
-        
-          <description>&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
-
-</description>
-        
-        <pubDate>Sat, 18 May 2019 10:00:00 +0000</pubDate>
-        <link>
-        /2019/05/chrome-extension/</link>
-        <guid isPermaLink="true">/2019/05/chrome-extension/</guid>
       </item>
       
     
