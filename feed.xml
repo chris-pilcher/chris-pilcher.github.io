@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-05-19T07:45:46+00:00</updated><id>/</id><title type="html">Chris Pilcher</title><subtitle>My blog about software development.</subtitle><entry><title type="html">ReSharper Keyboard Shortcuts</title><link href="/2019/05/resharper-shortcuts/" rel="alternate" type="text/html" title="ReSharper Keyboard Shortcuts" /><published>2019-05-18T10:00:00+00:00</published><updated>2019-05-18T10:00:00+00:00</updated><id>/2019/05/resharper-shortcuts</id><content type="html" xml:base="/2019/05/resharper-shortcuts/">&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-05-19T08:04:55+00:00</updated><id>/</id><title type="html">Chris Pilcher</title><subtitle>My blog about software development.</subtitle><entry><title type="html">ReSharper Keyboard Shortcuts</title><link href="/2019/05/resharper-shortcuts/" rel="alternate" type="text/html" title="ReSharper Keyboard Shortcuts" /><published>2019-05-18T10:00:00+00:00</published><updated>2019-05-18T10:00:00+00:00</updated><id>/2019/05/resharper-shortcuts</id><content type="html" xml:base="/2019/05/resharper-shortcuts/">&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
 
 &lt;p&gt;These are my most commonly used &lt;a href=&quot;https://www.jetbrains.com/resharper/docs/ReSharper_DefaultKeymap_IDEAscheme.pdf&quot;&gt;ReSharper keyboard shortcuts&lt;/a&gt;&lt;/p&gt;
 
@@ -6,7 +6,7 @@
 
 &lt;h1 id=&quot;my-most-used-shortcuts&quot;&gt;My Most Used Shortcuts&lt;/h1&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/images/resharper-shortcuts/resharper-shortcuts.png&quot;&gt;&lt;img src=&quot;/assets/images/resharper-shortcuts/resharper-shortcuts.png&quot; alt=&quot;img&quot; class=&quot;center-image&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;'/assets/images/resharper-shortcuts/resharper-shortcuts.png'&quot;&gt;&lt;img src=&quot;'/assets/images/resharper-shortcuts/resharper-shortcuts.png'&quot; alt=&quot;img&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;my-top-3-shortcuts&quot;&gt;My Top 3 Shortcuts&lt;/h1&gt;
 
@@ -33,13 +33,13 @@
 
 &lt;p&gt;I &lt;em&gt;Use CamelHumps&lt;/em&gt; 🐫&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/resharper-shortcuts/resharper-camel-humps-settings.png&quot; alt=&quot;img&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;</content><author><name>Chris Pilcher</name></author><summary type="html">Introduction</summary></entry><entry><title type="html">hyper.is Terminal</title><link href="/2019/05/hyper/" rel="alternate" type="text/html" title="hyper.is Terminal" /><published>2019-05-18T10:00:00+00:00</published><updated>2019-05-18T10:00:00+00:00</updated><id>/2019/05/hyper</id><content type="html" xml:base="/2019/05/hyper/">&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;'/assets/images/resharper-shortcuts/resharper-camel-humps-settings.png'&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;</content><author><name>Chris Pilcher</name></author><summary type="html">Introduction</summary></entry><entry><title type="html">hyper.is Terminal</title><link href="/2019/05/hyper/" rel="alternate" type="text/html" title="hyper.is Terminal" /><published>2019-05-18T10:00:00+00:00</published><updated>2019-05-18T10:00:00+00:00</updated><id>/2019/05/hyper</id><content type="html" xml:base="/2019/05/hyper/">&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
 
 &lt;p&gt;For my terminal I use &lt;a href=&quot;https://hyper.is/&quot;&gt;hyper.js&lt;/a&gt; 👨‍💻&lt;/p&gt;
 
 &lt;p&gt;I’ve configured it based on based on &lt;a href=&quot;https://dev.to/droidmakk/configuring-hyper-terminal-in-windows-3j15&quot;&gt;dev.to - Configuring Hyper Terminal in Windows&lt;/a&gt; 🔥&lt;/p&gt;
 
-&lt;iframe width=&quot;640&quot; height=&quot;385&quot; src=&quot;https://www.youtube.com/embed/Jw2Uzi_LlnQ&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/Jw2Uzi_LlnQ?rel=0&amp;amp;showinfo=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;installation&quot;&gt;Installation&lt;/h1&gt;
