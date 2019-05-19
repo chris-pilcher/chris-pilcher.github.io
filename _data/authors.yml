@@ -4,7 +4,7 @@ chris:
   location: Auckland, New Zealand
   url_full: https://www.chrispilcher.com/
   url: chrispilcher.com
-  bio: I'm a software developer based in Auckland, New Zealand. You can find me on [GitHub](https://github.com/chris-pilcher) and [LinkedIn](https://www.linkedin.com/in/chris-pilcher-nz/).
+  bio: I'm a software developer based in Auckland, New Zealand. You can find me on <a href="https://github.com/chris-pilcher">GitHub</a> and <a href=https://www.linkedin.com/in/chris-pilcher-nz/>LinkedIn</a>.
   picture: assets/images/chris.jpg
   facebook: False
   twitter: False
