@@ -1,7 +1,7 @@
 ---
 layout: post
 current: post
-cover:  assets/images/resharper-shortcuts/cover.jpg
+cover:  assets/images/resharper-shortcuts/cover.png
 navigation: True
 title: "ReSharper Keyboard Shortcuts"
 date: 2019-05-18 10:00:00
