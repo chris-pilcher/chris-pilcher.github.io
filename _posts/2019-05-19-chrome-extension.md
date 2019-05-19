@@ -1,7 +1,7 @@
 ---
 layout: post
 current: post
-cover:  assets/images/pull-request-chrome-extension/cover.jpg
+cover:  assets/images/pr-chrome-extension/cover.jpg
 navigation: True
 title: "My First Chrome Extension"
 date: 2019-05-19 10:00:00
