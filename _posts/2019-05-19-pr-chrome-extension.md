@@ -3,7 +3,7 @@ layout: post
 current: post
 cover:  assets/images/pull-request-chrome-extension/cover.jpg
 navigation: True
-title: "My first Chrome extension"
+title: "My First Chrome Extension"
 date: 2019-05-19 10:00:00
 class: post-template
 subclass: 'post tag-getting-started'
@@ -26,7 +26,7 @@ Manually setting these titles was a hassle 😫
 
 I created a simple Chrome extension to generate the title automatically.  
 
-![img]({{ '/assets/images/pull-request-chrome-extension/pr-title-chrome-extension-screenshot.png' | relative_url }}){: .center-image }
+![img]({{ '/assets/images/pr-chrome-extension/pr-title-chrome-extension-screenshot.png' | relative_url }}){: .center-image }
 
 <iframe width="640" height="385" src="https://www.youtube.com/embed/Mdlk2XhaXl8" frameborder="0" allowfullscreen></iframe><br>
 
@@ -98,19 +98,19 @@ setInterval(() => {
 
 Create a zip file containing the code.
 
-![img]({{ '/assets/images/pull-request-chrome-extension/create-zip-file.png' | relative_url }}){: .center-image }
+![img]({{ '/assets/images/pr-chrome-extension/create-zip-file.png' | relative_url }}){: .center-image }
 
 Upload to the Chrome web store  
 
-![img]({{ '/assets/images/pull-request-chrome-extension/dashboard-upload.png' | relative_url }}){: .center-image }
+![img]({{ '/assets/images/pr-chrome-extension/dashboard-upload.png' | relative_url }}){: .center-image }
 
 Fill in the details 
 
-![img]({{ '/assets/images/pull-request-chrome-extension/dashboard-main.png' | relative_url }}){: .center-image }
+![img]({{ '/assets/images/pr-chrome-extension/dashboard-main.png' | relative_url }}){: .center-image }
 
 Publish to the store
 
-[![img]({{ '/assets/images/pull-request-chrome-extension/store-listing.png' | relative_url }}){: .center-image }](https://chrome.google.com/webstore/detail/visual-studio-pr-title-ge/lbkfohchcccpbmgckjbcgcnlmohdieej)
+[![img]({{ '/assets/images/pr-chrome-extension/store-listing.png' | relative_url }}){: .center-image }](https://chrome.google.com/webstore/detail/visual-studio-pr-title-ge/lbkfohchcccpbmgckjbcgcnlmohdieej)
 
 [Visual Studio PR Title Generator - Chrome Web Store](https://chrome.google.com/webstore/detail/visual-studio-pr-title-ge/lbkfohchcccpbmgckjbcgcnlmohdieej)
 
