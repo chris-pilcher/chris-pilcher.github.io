@@ -18,7 +18,7 @@ I use the _IntelliJ IDEA/ReSharper 2.x_ scheme. This scheme shares the majority 
 
 # My Most Used Shortcuts
 
-[![img]('/assets/images/resharper-shortcuts/resharper-shortcuts.png')]('/assets/images/resharper-shortcuts/resharper-shortcuts.png')
+![img]({{'/assets/images/resharper-shortcuts/resharper-shortcuts.png' | relative_url }})
 
 # My Top 3 Shortcuts
 
@@ -34,4 +34,4 @@ I use the _IntelliJ IDEA/ReSharper 2.x_ scheme. This scheme shares the majority 
 
 I _Use CamelHumps_ 🐫  
 
-![img]('/assets/images/resharper-shortcuts/resharper-camel-humps-settings.png')
+![img]({{ '/assets/images/resharper-shortcuts/resharper-camel-humps-settings.png' | relative_url }})
