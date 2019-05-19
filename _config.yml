@@ -35,7 +35,7 @@ disqus_shortname: # replace with your disqus username
 google_analytics: # replace with your GA tracking identifier
 
 # Permalinks
-permalink: /:year/:month/:title
+permalink: /:title
 # permalink: /author/:author
 # permalink: /tag/:tag
 
