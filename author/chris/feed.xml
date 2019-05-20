@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="/author/chris/feed.xml" rel="self" type="application/atom+xml" />
   <link href="/" rel="alternate" type="text/html" />
-  <updated>2019-05-19T23:15:09+00:00</updated>
+  <updated>2019-05-20T01:15:49+00:00</updated>
   <id>/author/chris/feed.xml</id>
 
   
@@ -41,7 +41,7 @@
 
 &lt;p&gt;For my terminal I use &lt;a href=&quot;https://hyper.is/&quot;&gt;hyper.js&lt;/a&gt; 👨‍💻&lt;/p&gt;
 
-&lt;p&gt;I’ve configured it based on based on &lt;a href=&quot;https://dev.to/droidmakk/configuring-hyper-terminal-in-windows-3j15&quot;&gt;dev.to - Configuring Hyper Terminal in Windows&lt;/a&gt; 🔥&lt;/p&gt;
+&lt;p&gt;I’ve configured it based on &lt;a href=&quot;https://dev.to/droidmakk/configuring-hyper-terminal-in-windows-3j15&quot;&gt;dev.to - Configuring Hyper Terminal in Windows&lt;/a&gt; 🔥&lt;/p&gt;
 
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/Jw2Uzi_LlnQ?rel=0&amp;amp;showinfo=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -385,7 +385,7 @@
       <id>/2019/05/pull-request-chrome-extension</id>
       <content type="html" xml:base="/2019/05/pull-request-chrome-extension/">&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
 
-&lt;p&gt;We have naming convention for the title of pull requests at work.&lt;/p&gt;
+&lt;p&gt;We have a naming convention for the title of pull requests at work.&lt;/p&gt;
 
 &lt;p&gt;Example title: &lt;code class=&quot;highlighter-rouge&quot;&gt;feature/turn-off-line-endings to develop&lt;/code&gt;&lt;/p&gt;
 
@@ -408,7 +408,7 @@
 
 &lt;h1 id=&quot;code-&quot;&gt;Code 👨‍💻&lt;/h1&gt;
 
-&lt;p&gt;The extension is a &lt;code class=&quot;highlighter-rouge&quot;&gt;manifest.json&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;content.js&lt;/code&gt;, libs and 3 icon files. The code is available on &lt;a href=&quot;https://github.com/chris-pilcher/pr-title-chrome-extension/&quot;&gt;github.com/chris-pilcher/pr-title-chrome-extension&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The extension is a &lt;code class=&quot;highlighter-rouge&quot;&gt;manifest.json&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;content.js&lt;/code&gt;, libs and 3 icon files. The code is available on &lt;a href=&quot;https://github.com/chris-pilcher/pr-title-chrome-extension/&quot;&gt;github.com/chris-pilcher/pr-title-chrome-extension&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;manifest.json&lt;/code&gt;:&lt;/p&gt;
 
@@ -486,11 +486,11 @@
 
 &lt;h1 id=&quot;publishing-&quot;&gt;Publishing 🚀&lt;/h1&gt;
 
-&lt;p&gt;Create a zip file containing the code.&lt;/p&gt;
+&lt;p&gt;Create a zip file&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/pull-request-chrome-extension/create-zip-file.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Upload to the Chrome web store&lt;/p&gt;
+&lt;p&gt;Upload to the Chrome Web Store&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/pull-request-chrome-extension/dashboard-upload.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
 
@@ -546,7 +546,7 @@
 
 &lt;p&gt;These are my most commonly used &lt;a href=&quot;https://www.jetbrains.com/resharper/docs/ReSharper_DefaultKeymap_IDEAscheme.pdf&quot;&gt;ReSharper keyboard shortcuts&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;I use the &lt;em&gt;IntelliJ IDEA/ReSharper 2.x&lt;/em&gt; scheme. This scheme shares the majority of shortcuts with other JetBrains development enviornments. This means I can use the same shortcuts in WebStorm 👌&lt;/p&gt;
+&lt;p&gt;I use the &lt;em&gt;IntelliJ IDEA/ReSharper 2.x&lt;/em&gt; scheme. This scheme shares the majority of shortcuts with other JetBrains development environments. This means I can use the same shortcuts in WebStorm 👌&lt;/p&gt;
 
 &lt;h1 id=&quot;my-most-used-shortcuts&quot;&gt;My Most Used Shortcuts&lt;/h1&gt;
 
