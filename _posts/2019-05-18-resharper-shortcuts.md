@@ -3,7 +3,7 @@ layout: post
 current: post
 cover:  assets/images/resharper-shortcuts/cover.png
 navigation: True
-title: "ReSharper Keyboard Shortcuts"
+title: ReSharper Keyboard Shortcuts
 date: 2019-05-18 10:00:00
 class: post-template
 subclass: 'post tag-getting-started'
