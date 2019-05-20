@@ -12,7 +12,7 @@ author: chris
 
 # Introduction
 
-We have naming convention for the title of pull requests at work.
+We have a naming convention for the title of pull requests at work.
 
 Example title: `feature/turn-off-line-endings to develop`
 
@@ -34,7 +34,7 @@ I created a simple Chrome extension to generate the title automatically.
 
 # Code 👨‍💻
 
-The extension is a `manifest.json`, `content.js`, libs and 3 icon files. The code is available on [github.com/chris-pilcher/pr-title-chrome-extension](https://github.com/chris-pilcher/pr-title-chrome-extension/)
+The extension is a `manifest.json`, `content.js`, libs and 3 icon files. The code is available on [github.com/chris-pilcher/pr-title-chrome-extension](https://github.com/chris-pilcher/pr-title-chrome-extension/).
 
 `manifest.json`:
 {% highlight json %}
@@ -114,11 +114,11 @@ observer.observe(document.body, { childList: true });
 
 # Publishing 🚀
 
-Create a zip file containing the code.
+Create a zip file
 
 ![img]({{ '/assets/images/pull-request-chrome-extension/create-zip-file.png' | relative_url }})
 
-Upload to the Chrome web store  
+Upload to the Chrome Web Store  
 
 ![img]({{ '/assets/images/pull-request-chrome-extension/dashboard-upload.png' | relative_url }})
 
