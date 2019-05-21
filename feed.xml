@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-05-20T05:01:51+00:00</updated><id>/</id><title type="html">Chris Pilcher</title><subtitle>My blog about software development.</subtitle><entry><title type="html">ReSharper Keyboard Shortcuts</title><link href="/2019/05/resharper-shortcuts/" rel="alternate" type="text/html" title="ReSharper Keyboard Shortcuts" /><published>2019-05-18T10:00:00+00:00</published><updated>2019-05-18T10:00:00+00:00</updated><id>/2019/05/resharper-shortcuts</id><content type="html" xml:base="/2019/05/resharper-shortcuts/">&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-05-21T02:02:45+00:00</updated><id>/</id><title type="html">Chris Pilcher</title><subtitle>My blog about software development.</subtitle><entry><title type="html">ReSharper Keyboard Shortcuts</title><link href="/2019/05/resharper-shortcuts/" rel="alternate" type="text/html" title="ReSharper Keyboard Shortcuts" /><published>2019-05-18T10:00:00+00:00</published><updated>2019-05-18T10:00:00+00:00</updated><id>/2019/05/resharper-shortcuts</id><content type="html" xml:base="/2019/05/resharper-shortcuts/">&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
 
 &lt;p&gt;These are my most commonly used &lt;a href=&quot;https://www.jetbrains.com/resharper/docs/ReSharper_DefaultKeymap_IDEAscheme.pdf&quot;&gt;ReSharper keyboard shortcuts&lt;/a&gt;&lt;/p&gt;
 
@@ -11,13 +11,13 @@
 &lt;h1 id=&quot;my-top-3-shortcuts&quot;&gt;My Top 3 Shortcuts&lt;/h1&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;key highlighter-rouge&quot;&gt;Ctrl&lt;/code&gt;+&lt;code class=&quot;key highlighter-rouge&quot;&gt;Shift&lt;/code&gt;+&lt;code class=&quot;key highlighter-rouge&quot;&gt;R&lt;/code&gt; &lt;em&gt;Refactor this&lt;/em&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl&lt;/code&gt;+&lt;code class=&quot;highlighter-rouge&quot;&gt;Shift&lt;/code&gt;+&lt;code class=&quot;highlighter-rouge&quot;&gt;R&lt;/code&gt; &lt;em&gt;Refactor this&lt;/em&gt;
     &lt;ul&gt;
       &lt;li&gt;It’s awesome because it will show you the shortcuts available at your cursor position 🔥 &lt;img src=&quot;/assets/images/resharper-shortcuts/resharper-refactor-this-class.png&quot; alt=&quot;img&quot; /&gt; &lt;img src=&quot;/assets/images/resharper-shortcuts/resharper-refactor-this-constructor.png&quot; alt=&quot;img&quot; /&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;key highlighter-rouge&quot;&gt;Alt&lt;/code&gt;+&lt;code class=&quot;key highlighter-rouge&quot;&gt;Enter&lt;/code&gt; &lt;em&gt;Quick fixes / context actions&lt;/em&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;key highlighter-rouge&quot;&gt;Ctrl&lt;/code&gt;+&lt;code class=&quot;key highlighter-rouge&quot;&gt;N&lt;/code&gt; &lt;em&gt;Search / go to everything&lt;/em&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Alt&lt;/code&gt;+&lt;code class=&quot;highlighter-rouge&quot;&gt;Enter&lt;/code&gt; &lt;em&gt;Quick fixes / context actions&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl&lt;/code&gt;+&lt;code class=&quot;highlighter-rouge&quot;&gt;N&lt;/code&gt; &lt;em&gt;Search / go to everything&lt;/em&gt;
     &lt;ul&gt;
       &lt;li&gt;You can use camel humps for searching &lt;img src=&quot;/assets/images/resharper-shortcuts/resharper-camel-humps-search.png&quot; alt=&quot;img&quot; /&gt;&lt;/li&gt;
     &lt;/ul&gt;
@@ -169,7 +169,7 @@
 &lt;ul&gt;
   &lt;li&gt;Install &lt;a href=&quot;https://hyper.is/&quot;&gt;hyper.js&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Install &lt;a href=&quot;https://www.fontsquirrel.com/fonts/fira-code&quot;&gt;Fira Code&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Modify &lt;code class=&quot;highlighter-rouge&quot;&gt;.hyper.js&lt;/code&gt; config &lt;code class=&quot;key highlighter-rouge&quot;&gt;Ctrl&lt;/code&gt;+&lt;code class=&quot;key highlighter-rouge&quot;&gt;,&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Modify &lt;code class=&quot;highlighter-rouge&quot;&gt;.hyper.js&lt;/code&gt; config &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl&lt;/code&gt;+&lt;code class=&quot;highlighter-rouge&quot;&gt;,&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
