@@ -5,8 +5,9 @@ cover:  assets/images/pull-request-chrome-extension/cover.jpg
 navigation: True
 title: My First Chrome Extension
 date: 2019-05-18 10:00:00
+tags: javascript
 class: post-template
-subclass: 'post tag-getting-started'
+subclass: 'post tag-javascript'
 author: chris
 ---
 
