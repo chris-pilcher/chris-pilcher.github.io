@@ -2,6 +2,7 @@
 layout: page
 current: about
 title: About
+cover: assets/images/blog-cover.jpg
 navigation: true
 class: page-template
 subclass: 'post page'
