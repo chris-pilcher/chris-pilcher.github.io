@@ -1,12 +1,12 @@
 javascript:
   name: javascript
-  description: False
-  cover: False
+  description: JavaScript is a high-level, dynamic, multi-paradigm, object-oriented, prototype-based, weakly-typed language used for both client-side and server-side scripting.
+  cover: assets/images/blog-cover.jpg
 csharp:
   name: csharp
-  description: False
-  cover: False
+  description: C# (pronounced "see sharp") is a high level, statically typed, multi-paradigm programming language developed by Microsoft.
+  cover: assets/images/blog-cover.jpg
 tools:
   name: tools
-  description: False
-  cover: False
+  description: Tools used to create, debug, maintain, or support other programs and applications.
+  cover: assets/images/blog-cover.jpg
