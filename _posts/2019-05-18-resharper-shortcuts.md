@@ -11,8 +11,6 @@ subclass: 'post tag-tools'
 author: chris
 ---
 
-# Introduction
-
 These are my most commonly used [ReSharper keyboard shortcuts](https://www.jetbrains.com/resharper/docs/ReSharper_DefaultKeymap_IDEAscheme.pdf)
 
 I use the _IntelliJ IDEA/ReSharper 2.x_ scheme. This scheme shares the majority of shortcuts with other JetBrains development environments. This means I can use the same shortcuts in WebStorm 👌  

@@ -11,8 +11,6 @@ subclass: 'post tag-javascript'
 author: chris
 ---
 
-# Introduction
-
 We have a naming convention for the title of pull requests at work.
 
 Example title: `feature/turn-off-line-endings to develop`
