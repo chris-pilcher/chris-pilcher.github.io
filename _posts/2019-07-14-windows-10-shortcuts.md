@@ -1,7 +1,7 @@
 ---
 layout: post
 current: post
-cover:  assets/images/windows-10-shortcuts/cover.png
+cover:  assets/images/windows-10-shortcuts/cover.jpg
 navigation: True
 title: Lesser-Known Windows 10 Shortcuts
 date: 2019-07-14 10:00:00
