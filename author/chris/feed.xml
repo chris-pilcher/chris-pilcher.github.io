@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="/author/chris/feed.xml" rel="self" type="application/atom+xml" />
   <link href="/" rel="alternate" type="text/html" />
-  <updated>2019-07-16T04:25:47+00:00</updated>
+  <updated>2019-07-16T22:09:44+00:00</updated>
   <id>/author/chris/feed.xml</id>
 
   
@@ -112,9 +112,7 @@
       <published>2019-05-18T10:00:00+00:00</published>
       <updated>2019-05-18T10:00:00+00:00</updated>
       <id>/2019/05/hyper</id>
-      <content type="html" xml:base="/2019/05/hyper/">&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
-
-&lt;p&gt;For my terminal I use &lt;a href=&quot;https://hyper.is/&quot;&gt;hyper.js&lt;/a&gt; 👨‍💻&lt;/p&gt;
+      <content type="html" xml:base="/2019/05/hyper/">&lt;p&gt;For my terminal I use &lt;a href=&quot;https://hyper.is/&quot;&gt;hyper.js&lt;/a&gt; 👨‍💻&lt;/p&gt;
 
 &lt;p&gt;I’ve configured it based on &lt;a href=&quot;https://dev.to/droidmakk/configuring-hyper-terminal-in-windows-3j15&quot;&gt;dev.to - Configuring Hyper Terminal in Windows&lt;/a&gt; 🔥&lt;/p&gt;
 
@@ -447,7 +445,7 @@
       
 
       
-        <summary type="html">Introduction</summary>
+        <summary type="html">For my terminal I use hyper.js 👨‍💻</summary>
       
 
       
@@ -460,9 +458,7 @@
       <published>2019-05-18T10:00:00+00:00</published>
       <updated>2019-05-18T10:00:00+00:00</updated>
       <id>/2019/05/pull-request-chrome-extension</id>
-      <content type="html" xml:base="/2019/05/pull-request-chrome-extension/">&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
-
-&lt;p&gt;We have a naming convention for the title of pull requests at work.&lt;/p&gt;
+      <content type="html" xml:base="/2019/05/pull-request-chrome-extension/">&lt;p&gt;We have a naming convention for the title of pull requests at work.&lt;/p&gt;
 
 &lt;p&gt;Example title: &lt;code class=&quot;highlighter-rouge&quot;&gt;feature/turn-off-line-endings to develop&lt;/code&gt;&lt;/p&gt;
 
@@ -608,7 +604,7 @@
       
 
       
-        <summary type="html">Introduction</summary>
+        <summary type="html">We have a naming convention for the title of pull requests at work.</summary>
       
 
       
@@ -621,9 +617,7 @@
       <published>2019-05-18T10:00:00+00:00</published>
       <updated>2019-05-18T10:00:00+00:00</updated>
       <id>/2019/05/resharper-shortcuts</id>
-      <content type="html" xml:base="/2019/05/resharper-shortcuts/">&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
-
-&lt;p&gt;These are my most commonly used &lt;a href=&quot;https://www.jetbrains.com/resharper/docs/ReSharper_DefaultKeymap_IDEAscheme.pdf&quot;&gt;ReSharper keyboard shortcuts&lt;/a&gt;&lt;/p&gt;
+      <content type="html" xml:base="/2019/05/resharper-shortcuts/">&lt;p&gt;These are my most commonly used &lt;a href=&quot;https://www.jetbrains.com/resharper/docs/ReSharper_DefaultKeymap_IDEAscheme.pdf&quot;&gt;ReSharper keyboard shortcuts&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;I use the &lt;em&gt;IntelliJ IDEA/ReSharper 2.x&lt;/em&gt; scheme. This scheme shares the majority of shortcuts with other JetBrains development environments. This means I can use the same shortcuts in WebStorm 👌&lt;/p&gt;
 
@@ -672,7 +666,7 @@
       
 
       
-        <summary type="html">Introduction</summary>
+        <summary type="html">These are my most commonly used ReSharper keyboard shortcuts</summary>
       
 
       

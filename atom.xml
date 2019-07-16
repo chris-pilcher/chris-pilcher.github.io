@@ -25,7 +25,7 @@
       <item>
         <title>ReSharper Keyboard Shortcuts</title>
         
-          <description>&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+          <description>&lt;p&gt;These are my most commonly used &lt;a href=&quot;https://www.jetbrains.com/resharper/docs/ReSharper_DefaultKeymap_IDEAscheme.pdf&quot;&gt;ReSharper keyboard shortcuts&lt;/a&gt;&lt;/p&gt;
 
 </description>
         
@@ -40,7 +40,7 @@
       <item>
         <title>My First Chrome Extension</title>
         
-          <description>&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+          <description>&lt;p&gt;We have a naming convention for the title of pull requests at work.&lt;/p&gt;
 
 </description>
         
@@ -55,7 +55,7 @@
       <item>
         <title>hyper.is Terminal</title>
         
-          <description>&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+          <description>&lt;p&gt;For my terminal I use &lt;a href=&quot;https://hyper.is/&quot;&gt;hyper.js&lt;/a&gt; 👨‍💻&lt;/p&gt;
 
 </description>
         

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-07-16T04:25:47+00:00</updated><id>/</id><title type="html">Chris Pilcher</title><subtitle>My blog about software development.</subtitle><entry><title type="html">Lesser-Known Windows 10 Shortcuts</title><link href="/2019/07/windows-10-shortcuts/" rel="alternate" type="text/html" title="Lesser-Known Windows 10 Shortcuts" /><published>2019-07-14T10:00:00+00:00</published><updated>2019-07-14T10:00:00+00:00</updated><id>/2019/07/windows-10-shortcuts</id><content type="html" xml:base="/2019/07/windows-10-shortcuts/">&lt;p&gt;These are some of the lesser-known Windows 10 shortcuts I find useful.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-07-16T22:09:44+00:00</updated><id>/</id><title type="html">Chris Pilcher</title><subtitle>My blog about software development.</subtitle><entry><title type="html">Lesser-Known Windows 10 Shortcuts</title><link href="/2019/07/windows-10-shortcuts/" rel="alternate" type="text/html" title="Lesser-Known Windows 10 Shortcuts" /><published>2019-07-14T10:00:00+00:00</published><updated>2019-07-14T10:00:00+00:00</updated><id>/2019/07/windows-10-shortcuts</id><content type="html" xml:base="/2019/07/windows-10-shortcuts/">&lt;p&gt;These are some of the lesser-known Windows 10 shortcuts I find useful.&lt;/p&gt;
 
 &lt;table&gt;
 &lt;tbody&gt;
@@ -39,9 +39,7 @@
 &lt;td&gt;File Explorer&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
-&lt;/table&gt;</content><author><name>Chris Pilcher</name></author><category term="tools" /><summary type="html">These are some of the lesser-known Windows 10 shortcuts I find useful.</summary></entry><entry><title type="html">ReSharper Keyboard Shortcuts</title><link href="/2019/05/resharper-shortcuts/" rel="alternate" type="text/html" title="ReSharper Keyboard Shortcuts" /><published>2019-05-18T10:00:00+00:00</published><updated>2019-05-18T10:00:00+00:00</updated><id>/2019/05/resharper-shortcuts</id><content type="html" xml:base="/2019/05/resharper-shortcuts/">&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
-
-&lt;p&gt;These are my most commonly used &lt;a href=&quot;https://www.jetbrains.com/resharper/docs/ReSharper_DefaultKeymap_IDEAscheme.pdf&quot;&gt;ReSharper keyboard shortcuts&lt;/a&gt;&lt;/p&gt;
+&lt;/table&gt;</content><author><name>Chris Pilcher</name></author><category term="tools" /><summary type="html">These are some of the lesser-known Windows 10 shortcuts I find useful.</summary></entry><entry><title type="html">ReSharper Keyboard Shortcuts</title><link href="/2019/05/resharper-shortcuts/" rel="alternate" type="text/html" title="ReSharper Keyboard Shortcuts" /><published>2019-05-18T10:00:00+00:00</published><updated>2019-05-18T10:00:00+00:00</updated><id>/2019/05/resharper-shortcuts</id><content type="html" xml:base="/2019/05/resharper-shortcuts/">&lt;p&gt;These are my most commonly used &lt;a href=&quot;https://www.jetbrains.com/resharper/docs/ReSharper_DefaultKeymap_IDEAscheme.pdf&quot;&gt;ReSharper keyboard shortcuts&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;I use the &lt;em&gt;IntelliJ IDEA/ReSharper 2.x&lt;/em&gt; scheme. This scheme shares the majority of shortcuts with other JetBrains development environments. This means I can use the same shortcuts in WebStorm 👌&lt;/p&gt;
 
@@ -69,9 +67,7 @@
 
 &lt;p&gt;I &lt;em&gt;Use CamelHumps&lt;/em&gt; 🐫&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/resharper-shortcuts/resharper-camel-humps-settings.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;</content><author><name>Chris Pilcher</name></author><category term="tools" /><summary type="html">Introduction</summary></entry><entry><title type="html">My First Chrome Extension</title><link href="/2019/05/pull-request-chrome-extension/" rel="alternate" type="text/html" title="My First Chrome Extension" /><published>2019-05-18T10:00:00+00:00</published><updated>2019-05-18T10:00:00+00:00</updated><id>/2019/05/pull-request-chrome-extension</id><content type="html" xml:base="/2019/05/pull-request-chrome-extension/">&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
-
-&lt;p&gt;We have a naming convention for the title of pull requests at work.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/resharper-shortcuts/resharper-camel-humps-settings.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;</content><author><name>Chris Pilcher</name></author><category term="tools" /><summary type="html">These are my most commonly used ReSharper keyboard shortcuts</summary></entry><entry><title type="html">My First Chrome Extension</title><link href="/2019/05/pull-request-chrome-extension/" rel="alternate" type="text/html" title="My First Chrome Extension" /><published>2019-05-18T10:00:00+00:00</published><updated>2019-05-18T10:00:00+00:00</updated><id>/2019/05/pull-request-chrome-extension</id><content type="html" xml:base="/2019/05/pull-request-chrome-extension/">&lt;p&gt;We have a naming convention for the title of pull requests at work.&lt;/p&gt;
 
 &lt;p&gt;Example title: &lt;code class=&quot;highlighter-rouge&quot;&gt;feature/turn-off-line-endings to develop&lt;/code&gt;&lt;/p&gt;
 
@@ -196,9 +192,7 @@
   &lt;li&gt;I found &lt;a href=&quot;https://www.youtube.com/watch?v=wHZCYi1K664&quot;&gt;Build &amp;amp; Publish a Custom Google Chrome Extension - YouTube&lt;/a&gt; tutorial helpful 👍&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/visual-studio-pr-title-ge/lbkfohchcccpbmgckjbcgcnlmohdieej&quot;&gt;Visual Studio PR Title Generator - Chrome Web Store&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/chris-pilcher/pr-title-chrome-extension/&quot;&gt;github.com/chris-pilcher/pr-title-chrome-extension&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Chris Pilcher</name></author><category term="javascript" /><summary type="html">Introduction</summary></entry><entry><title type="html">hyper.is Terminal</title><link href="/2019/05/hyper/" rel="alternate" type="text/html" title="hyper.is Terminal" /><published>2019-05-18T10:00:00+00:00</published><updated>2019-05-18T10:00:00+00:00</updated><id>/2019/05/hyper</id><content type="html" xml:base="/2019/05/hyper/">&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
-
-&lt;p&gt;For my terminal I use &lt;a href=&quot;https://hyper.is/&quot;&gt;hyper.js&lt;/a&gt; 👨‍💻&lt;/p&gt;
+&lt;/ul&gt;</content><author><name>Chris Pilcher</name></author><category term="javascript" /><summary type="html">We have a naming convention for the title of pull requests at work.</summary></entry><entry><title type="html">hyper.is Terminal</title><link href="/2019/05/hyper/" rel="alternate" type="text/html" title="hyper.is Terminal" /><published>2019-05-18T10:00:00+00:00</published><updated>2019-05-18T10:00:00+00:00</updated><id>/2019/05/hyper</id><content type="html" xml:base="/2019/05/hyper/">&lt;p&gt;For my terminal I use &lt;a href=&quot;https://hyper.is/&quot;&gt;hyper.js&lt;/a&gt; 👨‍💻&lt;/p&gt;
 
 &lt;p&gt;I’ve configured it based on &lt;a href=&quot;https://dev.to/droidmakk/configuring-hyper-terminal-in-windows-3j15&quot;&gt;dev.to - Configuring Hyper Terminal in Windows&lt;/a&gt; 🔥&lt;/p&gt;
 
@@ -510,4 +504,4 @@
     &lt;span class=&quot;c1&quot;&gt;// Example&lt;/span&gt;
     &lt;span class=&quot;c1&quot;&gt;// 'window:devtools': 'cmd+alt+o',&lt;/span&gt;
   &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name>Chris Pilcher</name></author><category term="tools" /><summary type="html">Introduction</summary></entry></feed>
+&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name>Chris Pilcher</name></author><category term="tools" /><summary type="html">For my terminal I use hyper.js 👨‍💻</summary></entry></feed>
