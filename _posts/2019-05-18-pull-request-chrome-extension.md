@@ -21,7 +21,7 @@ I created a simple Chrome extension to generate the title automatically.
 
 ![img]({{ '/assets/images/pull-request-chrome-extension/pr-title-chrome-extension-screenshot.png' | relative_url }})
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Mdlk2XhaXl8?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe><br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Mdlk2XhaXl8?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 ### Code 👨‍💻
 
