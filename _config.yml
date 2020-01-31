@@ -6,7 +6,9 @@ paginate: 1
 baseurl: ""
 permalink: pretty
 markdown: kramdown
-highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 
 # Gems
 plugins:
