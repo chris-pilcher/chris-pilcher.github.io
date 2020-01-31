@@ -1,14 +1,6 @@
 ---
 layout: post
-current: post
-cover:  assets/images/pull-request-chrome-extension/cover.jpg
-navigation: True
 title: My First Chrome Extension
-date: 2019-05-18 10:00:00
-tags: javascript
-class: post-template
-subclass: 'post tag-javascript'
-author: chris
 ---
 
 We have a naming convention for the title of pull requests at work.
@@ -25,7 +17,7 @@ Manually setting these titles is a hassle 😫
 
 # Solution 💡
 
-I created a simple Chrome extension to generate the title automatically.  
+I created a simple Chrome extension to generate the title automatically.
 
 ![img]({{ '/assets/images/pull-request-chrome-extension/pr-title-chrome-extension-screenshot.png' | relative_url }})
 
@@ -38,28 +30,28 @@ The extension is a `manifest.json`, `content.js`, libs and 3 icon files. The cod
 `manifest.json`:
 {% highlight json %}
 {
-  "manifest_version":2,
-  "name":"Visual Studio PR Title Generator",
-  "short_name":"VS Title Gen",
-  "version":"0.0.0.3",
-  "description":"Generate pull request titles in Visual Studio Online. Updates the PR title to \"[source branch name] to [destination branch name]\"",
-  "content_scripts":[
-    {
-      "js":[
-        "libs/jquery-3.4.1.min.js",
-        "libs/purl.js",
-        "content.js"
-      ],
-      "matches":[
-        "https://*.visualstudio.com/*"
-      ]
-    }
-  ],
-  "icons":{
-    "16":"icon16.png",
-    "48":"icon48.png",
-    "128":"icon128.png"
-  }
+"manifest_version":2,
+"name":"Visual Studio PR Title Generator",
+"short_name":"VS Title Gen",
+"version":"0.0.0.3",
+"description":"Generate pull request titles in Visual Studio Online. Updates the PR title to \"[source branch name] to [destination branch name]\"",
+"content_scripts":[
+{
+"js":[
+"libs/jquery-3.4.1.min.js",
+"libs/purl.js",
+"content.js"
+],
+"matches":[
+"https://*.visualstudio.com/*"
+]
+}
+],
+"icons":{
+"16":"icon16.png",
+"48":"icon48.png",
+"128":"icon128.png"
+}
 }
 {% endhighlight %}
 
@@ -67,44 +59,45 @@ The extension is a `manifest.json`, `content.js`, libs and 3 icon files. The cod
 {% highlight javascript %}
 // Represents information from the page
 const page = {
-  get titleInput() {
-    return $(".vc-pullRequestCreate-title-container").find("input");
+get titleInput() {
+return $(".vc-pullRequestCreate-title-container").find("input");
   },
   get sourceBranchName() {
     return $.url().param("sourceRef");
-  },
-  get targetBranchName() {
-    return $.url().param("targetRef");
+},
+get targetBranchName() {
+return $.url().param("targetRef");
   },
   get isPullRequestCreatePath() {
     return $.url()
-      .attr()
-      .path.endsWith("pullrequestcreate");
-  }
+.attr()
+.path.endsWith("pullrequestcreate");
+}
 };
 
 // Updates the title of the pull request
 function updateTitle() {
-  page.titleInput.val(`${page.sourceBranchName} to ${page.targetBranchName}`);
+page.titleInput.val(`${page.sourceBranchName} to ${page.targetBranchName}`);
 
-  // The follow two lines are required to change the value of an input made with reactjs.
-  // See: https://stackoverflow.com/questions/54137836/change-value-of-input-made-with-react-from-chrome-extension/54138182
-  page.titleInput[0].dispatchEvent(new Event("change", { bubbles: true }));
-  page.titleInput[0].dispatchEvent(new Event("blur", { bubbles: true }));
+// The follow two lines are required to change the value of an input made with reactjs.
+// See: https://stackoverflow.com/questions/54137836/change-value-of-input-made-with-react-from-chrome-extension/54138182
+page.titleInput[0].dispatchEvent(new Event("change", { bubbles: true }));
+page.titleInput[0].dispatchEvent(new Event("blur", { bubbles: true }));
 }
 
 // Called when changes are made to the DOM tree.
 function handleMutation() {
-  if (!page.isPullRequestCreatePath) return;
+if (!page.isPullRequestCreatePath) return;
 
-  const generateButtonNotVisible = !$("#generatePRTitle").length;
+const generateButtonNotVisible = !$("#generatePRTitle").length;
   if (generateButtonNotVisible) {
     const generateButton = $("<button>🖖</button>")
-      .attr({ id: "generatePRTitle", title: "Generate PR title" })
-      .click(updateTitle);
+.attr({ id: "generatePRTitle", title: "Generate PR title" })
+.click(updateTitle);
 
     page.titleInput.after(generateButton);
-  }
+
+}
 }
 
 const observer = new MutationObserver(handleMutation);
@@ -117,11 +110,11 @@ Create a zip file
 
 ![img]({{ '/assets/images/pull-request-chrome-extension/create-zip-file.png' | relative_url }})
 
-Upload to the Chrome Web Store  
+Upload to the Chrome Web Store
 
 ![img]({{ '/assets/images/pull-request-chrome-extension/dashboard-upload.png' | relative_url }})
 
-Fill in the details 
+Fill in the details
 
 ![img]({{ '/assets/images/pull-request-chrome-extension/dashboard-main.png' | relative_url }})
 
@@ -133,6 +126,6 @@ Publish to the store
 
 # Links
 
-* I found [Build & Publish a Custom Google Chrome Extension - YouTube](https://www.youtube.com/watch?v=wHZCYi1K664) tutorial helpful 👍
-* [Visual Studio PR Title Generator - Chrome Web Store](https://chrome.google.com/webstore/detail/visual-studio-pr-title-ge/lbkfohchcccpbmgckjbcgcnlmohdieej)
-* [github.com/chris-pilcher/pr-title-chrome-extension](https://github.com/chris-pilcher/pr-title-chrome-extension/)
+- I found [Build & Publish a Custom Google Chrome Extension - YouTube](https://www.youtube.com/watch?v=wHZCYi1K664) tutorial helpful 👍
+- [Visual Studio PR Title Generator - Chrome Web Store](https://chrome.google.com/webstore/detail/visual-studio-pr-title-ge/lbkfohchcccpbmgckjbcgcnlmohdieej)
+- [github.com/chris-pilcher/pr-title-chrome-extension](https://github.com/chris-pilcher/pr-title-chrome-extension/)
