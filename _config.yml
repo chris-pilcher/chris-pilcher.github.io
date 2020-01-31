@@ -33,11 +33,4 @@ ga_analytics: UA-143287257-1
 
 # Specify the author for blog posts
 author:
-  name: Mark Otto
-  url: https://twitter.com/mdo
-  email: markdotto@gmail.com
-
-# Custom vars
-version: 3.0.0
-github:
-  repo: https://github.com/poole/poole
+  name: Chris Pilcheer
