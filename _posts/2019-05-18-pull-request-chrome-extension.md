@@ -30,28 +30,28 @@ The extension is a `manifest.json`, `content.js`, libs and 3 icon files. The cod
 `manifest.json`:
 {% highlight json %}
 {
-"manifest_version":2,
-"name":"Visual Studio PR Title Generator",
-"short_name":"VS Title Gen",
-"version":"0.0.0.3",
-"description":"Generate pull request titles in Visual Studio Online. Updates the PR title to \"[source branch name] to [destination branch name]\"",
-"content_scripts":[
-{
-"js":[
-"libs/jquery-3.4.1.min.js",
-"libs/purl.js",
-"content.js"
-],
-"matches":[
-"https://*.visualstudio.com/*"
-]
-}
-],
-"icons":{
-"16":"icon16.png",
-"48":"icon48.png",
-"128":"icon128.png"
-}
+   "manifest_version":2,
+   "name":"Visual Studio PR Title Generator",
+   "short_name":"VS Title Gen",
+   "version":"0.0.0.3",
+   "description":"Generate pull request titles in Visual Studio Online. Updates the PR title to \"[source branch name] to [destination branch name]\"",
+   "content_scripts":[
+      {
+         "js":[
+            "libs/jquery-3.4.1.min.js",
+            "libs/purl.js",
+            "content.js"
+         ],
+         "matches":[
+            "https://*.visualstudio.com/*"
+         ]
+      }
+   ],
+   "icons":{
+      "16":"icon16.png",
+      "48":"icon48.png",
+      "128":"icon128.png"
+   }
 }
 {% endhighlight %}
 
@@ -59,45 +59,44 @@ The extension is a `manifest.json`, `content.js`, libs and 3 icon files. The cod
 {% highlight javascript %}
 // Represents information from the page
 const page = {
-get titleInput() {
-return $(".vc-pullRequestCreate-title-container").find("input");
+  get titleInput() {
+    return $(".vc-pullRequestCreate-title-container").find("input");
   },
   get sourceBranchName() {
     return $.url().param("sourceRef");
-},
-get targetBranchName() {
-return $.url().param("targetRef");
+  },
+  get targetBranchName() {
+    return $.url().param("targetRef");
   },
   get isPullRequestCreatePath() {
     return $.url()
-.attr()
-.path.endsWith("pullrequestcreate");
-}
+      .attr()
+      .path.endsWith("pullrequestcreate");
+  }
 };
 
 // Updates the title of the pull request
 function updateTitle() {
-page.titleInput.val(`${page.sourceBranchName} to ${page.targetBranchName}`);
+  page.titleInput.val(`${page.sourceBranchName} to ${page.targetBranchName}`);
 
-// The follow two lines are required to change the value of an input made with reactjs.
-// See: https://stackoverflow.com/questions/54137836/change-value-of-input-made-with-react-from-chrome-extension/54138182
-page.titleInput[0].dispatchEvent(new Event("change", { bubbles: true }));
-page.titleInput[0].dispatchEvent(new Event("blur", { bubbles: true }));
+  // The follow two lines are required to change the value of an input made with reactjs.
+  // See: https://stackoverflow.com/questions/54137836/change-value-of-input-made-with-react-from-chrome-extension/54138182
+  page.titleInput[0].dispatchEvent(new Event("change", { bubbles: true }));
+  page.titleInput[0].dispatchEvent(new Event("blur", { bubbles: true }));
 }
 
 // Called when changes are made to the DOM tree.
 function handleMutation() {
-if (!page.isPullRequestCreatePath) return;
+  if (!page.isPullRequestCreatePath) return;
 
-const generateButtonNotVisible = !$("#generatePRTitle").length;
+  const generateButtonNotVisible = !$("#generatePRTitle").length;
   if (generateButtonNotVisible) {
     const generateButton = $("<button>🖖</button>")
-.attr({ id: "generatePRTitle", title: "Generate PR title" })
-.click(updateTitle);
+      .attr({ id: "generatePRTitle", title: "Generate PR title" })
+      .click(updateTitle);
 
     page.titleInput.after(generateButton);
-
-}
+  }
 }
 
 const observer = new MutationObserver(handleMutation);
