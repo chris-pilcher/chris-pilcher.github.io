@@ -9,13 +9,13 @@ Example title: `feature/turn-off-line-endings to develop`
 
 Using this convention keeps pull request titles consistent and let reviewers easily see the source and destination branch before opening the pull request.
 
-## The Problem
+### The Problem
 
 Manually setting these titles is a hassle 😫
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VHuAQcZtMP8?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
-## Solution 💡
+### Solution 💡
 
 I created a simple Chrome extension to generate the title automatically.
 
@@ -23,7 +23,7 @@ I created a simple Chrome extension to generate the title automatically.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Mdlk2XhaXl8?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe><br>
 
-## Code 👨‍💻
+### Code 👨‍💻
 
 The extension is a `manifest.json`, `content.js`, libs and 3 icon files. The code is available on [github.com/chris-pilcher/pr-title-chrome-extension](https://github.com/chris-pilcher/pr-title-chrome-extension/).
 
@@ -103,7 +103,7 @@ const observer = new MutationObserver(handleMutation);
 observer.observe(document.body, { childList: true });
 {% endhighlight %}
 
-## Publishing 🚀
+### Publishing 🚀
 
 Create a zip file
 
@@ -123,7 +123,7 @@ Publish to the store
 
 [Visual Studio PR Title Generator - Chrome Web Store](https://chrome.google.com/webstore/detail/visual-studio-pr-title-ge/lbkfohchcccpbmgckjbcgcnlmohdieej)
 
-## Links
+### Links
 
 - I found [Build & Publish a Custom Google Chrome Extension - YouTube](https://www.youtube.com/watch?v=wHZCYi1K664) tutorial helpful 👍
 - [Visual Studio PR Title Generator - Chrome Web Store](https://chrome.google.com/webstore/detail/visual-studio-pr-title-ge/lbkfohchcccpbmgckjbcgcnlmohdieej)
