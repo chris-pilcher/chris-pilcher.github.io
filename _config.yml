@@ -1,10 +1,12 @@
 # Setup
-title: Poole
-tagline: The Jekyll Butler
-url: https://getpoole.com
+title: Chris Pilcher
+tagline: Software Development
+url: https://www.chrispilcher.com
 paginate: 1
 baseurl: ""
 permalink: pretty
+markdown: kramdown
+highlighter: rouge
 
 # Gems
 plugins:
