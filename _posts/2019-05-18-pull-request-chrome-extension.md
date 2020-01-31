@@ -15,7 +15,7 @@ Manually setting these titles is a hassle 😫
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VHuAQcZtMP8?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
-# Solution 💡
+## Solution 💡
 
 I created a simple Chrome extension to generate the title automatically.
 
