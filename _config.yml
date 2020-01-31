@@ -5,10 +5,6 @@ url: https://www.chrispilcher.com
 paginate: 1
 baseurl: ""
 permalink: pretty
-markdown: kramdown
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
 
 # Gems
 plugins:
