@@ -1,19 +1,41 @@
-# Dependencies
-markdown:         redcarpet
-pygments:         true
-
-# Permalinks
-permalink:        pretty
-
 # Setup
-title:            'Chris Pilcher'
-tagline:          'Software Development'
-url:              https://www.chrispilcher.com
+title: Chris Pilcher
+url: https://www.chrispilcher.com
+paginate: 1
+baseurl: ""
+permalink: pretty
 
+# Gems
+plugins:
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-seo-tag
+
+# Optimize Jekyll
+exclude:
+  - .editorconfig
+  - .git
+  - .jekyll-cache
+  - Gemfile
+  - Gemfile.lock
+
+sass:
+  sass_dir: _sass
+  style: :compressed
+
+# Options
+
+# Replace this value and uncomment to enable Google Analytics tracking
+ga_analytics: UA-143287257-1
+
+# Specify the author for blog posts
 author:
-  name:           'Chris Pilcher'
-
-paginate:         1
+  name: Chris Pilcher
 
 # Custom vars
-ga_analytics:     UA-143287257-1
+version: 3.0.0
+
+# Navbar page list
+nav:
+  - title: Blog
+    url: /archive
